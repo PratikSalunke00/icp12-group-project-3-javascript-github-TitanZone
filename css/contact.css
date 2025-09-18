@@ -184,3 +184,22 @@ box-shadow:0 10px 30px rgba(0,0,0,0.3);
             transform: translateY(-1px);
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
         }
+         .map-section {
+            padding: 3rem 0;
+            background: rgba(15, 20, 30, 0.5);
+        }
+        .map-container {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(78, 205, 196, 0.2);
+        }
+        .map-placeholder {
+            height: 300px;
+            background: rgba(20, 25, 36, 0.6);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #4ecdc4;
+            font-weight: bold;
+        }
