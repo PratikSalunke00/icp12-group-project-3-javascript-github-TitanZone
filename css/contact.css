@@ -56,3 +56,33 @@ P{
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
+.contact-section{
+    padding:5rem 0;
+
+}
+.contact-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap:3rem
+}
+.contact-info{
+background: rgba(20,25,36,0.6);
+padding:2rem;
+border-radius:10px;
+border:1px solid rgba(78,205,196,0.2);
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+.info-item{
+    display:flex;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+.info-item i{
+    font-size: 1.5rem;
+    color:#4ecdc4;
+    margin-right:1rem;
+    min-width:30px;
+}
+.info-item p{
+    margin:0;
+}
