@@ -35,7 +35,7 @@ P{
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin-top: 70px;
+    margin-top: 80px;
     background: linear-gradient(rgba(10,14,23,0.7),rgba(10,14,23,0.9),url())
 }
 .hero::before{
@@ -44,7 +44,7 @@ P{
     top: 0;
     left: 0;
     width: 100%;
-    height: 60%;
+    height: 80%;
     background:radial-gradient(circle at 50% 50%,rgba(78,205,196,0.1),transparent 70%);
 }
 .hero-content{
@@ -111,3 +111,76 @@ box-shadow:0 10px 30px rgba(0,0,0,0.3);
     transform:translateY(-3px);
     box-shadow:0 5px 15px rgba(78,205,196,0.4);
 }
+.contact-form {
+            background: rgba(20, 25, 36, 0.6);
+            padding: 2rem;
+            border-radius: 10px;
+            border: 1px solid rgba(78, 205, 196, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            background: rgba(15, 20, 30, 0.7);
+            border: 1px solid rgba(78, 205, 196, 0.3);
+            border-radius: 5px;
+            color: #e0e0e0;
+            font-family: inherit;
+            transition: all 0.3s;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #4ecdc4;
+            box-shadow: 0 0 0 2px rgba(78, 205, 196, 0.2);
+        }
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+.btn {
+            display: inline-block;
+            background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: 0.5s;
+        }
+        .btn:hover::before {
+            left: 100%;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .btn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
