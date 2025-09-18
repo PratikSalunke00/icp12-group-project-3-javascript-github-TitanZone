@@ -57,13 +57,14 @@ P{
     margin-bottom: 2rem;
 }
 .contact-section{
-    padding:5rem 0;
+    padding:30px 30px;
 
 }
 .contact-container{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    gap:3rem
+    gap:3rem;
+    
 }
 .contact-info{
 background: rgba(20,25,36,0.6);
@@ -190,6 +191,7 @@ box-shadow:0 10px 30px rgba(0,0,0,0.3);
         }
         .map-container {
             border-radius: 10px;
+            
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
             border: 1px solid rgba(78, 205, 196, 0.2);
@@ -202,4 +204,5 @@ box-shadow:0 10px 30px rgba(0,0,0,0.3);
             justify-content: center;
             color: #4ecdc4;
             font-weight: bold;
+            
         }
