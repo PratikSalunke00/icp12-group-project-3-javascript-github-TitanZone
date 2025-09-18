@@ -86,3 +86,28 @@ box-shadow:0 10px 30px rgba(0,0,0,0.3);
 .info-item p{
     margin:0;
 }
+.social-links{
+    display:flex;
+    gap:1rem;
+    margin-top: 2rem;
+
+}
+.social-links a {
+    display: inline-block;
+    width:40px;
+    height:40px;
+    background:rgba(78,205,196,0.1);
+    border-radius:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#4ecdc4;
+    text-decoration: none;
+    transition:all 0.3s;
+}
+.social-links a:hover{
+    background:#4ecdc4;
+    color:#0a0e17 ;
+    transform:translateY(-3px);
+    box-shadow:0 5px 15px rgba(78,205,196,0.4);
+}
