@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0a0e17;
+    color:#e0e0e0;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+h1,h2,h3,h4{
+    color: #ffffff;
+    margin-bottom: 1rem;
+
+}
+h1{
+    font-size: 2.5rem;
+    background: linear-gradient(90deg,#ff6b6b,#4ecdc4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 10px rgba(78, 205,196, 0.3);
+}
+h2{
+    font-size: 2rem;
+    color: #4ecdc4;
+}
+P{
+    margin-bottom: 1rem;
+}
