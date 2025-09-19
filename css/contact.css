@@ -295,3 +295,34 @@ box-shadow:0 10px 30px rgba(0,0,0,0.3);
             font-weight: bold;
             
         }
+        /* ---------------- Responsive Styles ---------------- */
+@media (max-width: 1024px) {
+    .map-section {
+        padding: 2.5rem 2rem;
+    }
+    .map-placeholder {
+        height: 280px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .map-section {
+        padding: 2rem 1.5rem;
+    }
+    .map-placeholder {
+        height: 250px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .map-section {
+        padding: 1.5rem 1rem;
+    }
+    .map-placeholder {
+        height: 200px;
+        font-size: 0.95rem;
+        padding: 0 10px; /* prevents text touching edges */
+    }
+}
