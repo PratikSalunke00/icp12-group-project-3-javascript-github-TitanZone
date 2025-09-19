@@ -220,6 +220,59 @@ box-shadow:0 10px 30px rgba(0,0,0,0.3);
             transform: translateY(-1px);
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
         }
+        /* ---------------- Responsive Styles ---------------- */
+@media (max-width: 1024px) {
+    .contact-section {
+        padding: 30px 20px;
+    }
+    .form-group label {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        gap: 2rem;
+    }
+    .form-group label {
+        font-size: 16px;
+    }
+    .btn {
+        padding: 10px 25px;
+        font-size: 15px;
+    }
+    .social-links {
+        gap: 1.5rem;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-section {
+        padding: 20px 15px;
+    }
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .form-group label {
+        font-size: 14px;
+    }
+    .btn {
+        width: 100%;
+        padding: 12px;
+        text-align: center;
+    }
+    .social-links {
+        gap: 1rem;
+        justify-content: center;
+    }
+    .social-links a {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+}
          .map-section {
             padding: 3rem 3rem;
             background: rgba(15, 20, 30, 0.5);
