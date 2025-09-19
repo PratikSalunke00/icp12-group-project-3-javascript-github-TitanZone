@@ -89,14 +89,14 @@ box-shadow:0 10px 30px rgba(0,0,0,0.3);
 }
 .social-links{
     display:flex;
-    gap:1rem;
+    gap:2rem;
     margin-top: 2rem;
 
 }
 .social-links a {
     display: inline-block;
-    width:40px;
-    height:40px;
+    width:50px;
+    height:50px;
     background:rgba(78,205,196,0.1);
     border-radius:50%;
     display: flex;
@@ -105,6 +105,7 @@ box-shadow:0 10px 30px rgba(0,0,0,0.3);
     color:#4ecdc4;
     text-decoration: none;
     transition:all 0.3s;
+    
 }
 .social-links a:hover{
     background:#4ecdc4;
@@ -186,7 +187,7 @@ box-shadow:0 10px 30px rgba(0,0,0,0.3);
             box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
         }
          .map-section {
-            padding: 3rem 0;
+            padding: 3rem 3rem;
             background: rgba(15, 20, 30, 0.5);
         }
         .map-container {
@@ -198,6 +199,7 @@ box-shadow:0 10px 30px rgba(0,0,0,0.3);
         }
         .map-placeholder {
             height: 300px;
+           
             background: rgba(20, 25, 36, 0.6);
             display: flex;
             align-items: center;
