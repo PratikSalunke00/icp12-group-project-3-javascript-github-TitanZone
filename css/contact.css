@@ -336,3 +336,12 @@ box-shadow:0 10px 30px rgba(0,0,0,0.3);
 .invalid {
     border: 2px solid #ff4d4d;
 }
+/* Success message */
+#form-success {
+    display: none;
+    background: #4caf50;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
