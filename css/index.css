@@ -45,10 +45,18 @@ a {
     top: 0;
     z-index: 10;
 }
+.sign-up-tag{
+    background-color:white;
+    color: black;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 20px;
+}
 
 .pages {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 40px;
     justify-content: space-around;
 }
@@ -112,4 +120,19 @@ a {
    height: 100%;
    object-fit:cover;
    border-radius: 0.5rem;
+}
+
+.top-game-sidebar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    background-color: #2f2b3a;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 32px;
+    border-radius: 10px;
+    font-size: larger;
+    cursor: pointer;
 }
