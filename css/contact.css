@@ -326,3 +326,24 @@ box-shadow:0 10px 30px rgba(0,0,0,0.3);
         padding: 0 10px; /* prevents text touching edges */
     }
 }
+/* Error styles */
+.error {
+    display: none;
+    color: #ff4d4d;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.invalid {
+    border: 2px solid #ff4d4d;
+}
+
+/* Success message */
+#form-success {
+    display: none;
+    background: #4caf50;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
