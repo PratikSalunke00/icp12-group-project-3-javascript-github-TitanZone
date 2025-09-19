@@ -26,7 +26,7 @@ h1{
     text-shadow: 0 0 10px rgba(78, 205,196, 0.3);
 }
 h2{
-    font-size: 40px;
+    font-size: 35px;
     color: #4ecdc4;
 }
 h3{
@@ -65,8 +65,32 @@ P{
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
+/* ------------------ Responsive Styles ------------------ */
+@media (max-width: 1024px) {
+    h1 { font-size: 2rem; }
+    h2 { font-size: 32px; }
+    h3 { font-size: 22px; }
+    .hero { height: 50vh; }
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 28px; }
+    h3 { font-size: 20px; }
+    .info-small-items { font-size: 18px; }
+    .hero { height: auto; padding: 60px 20px; margin-top: 60px; }
+    .hero p { font-size: 1rem; }
+}
+@media (max-width: 480px) {
+    h1 { font-size: 1.5rem; }
+    h2 { font-size: 24px; }
+    h3 { font-size: 18px; }
+    .info-small-items { font-size: 16px; }
+    .hero { padding: 40px 15px; margin-top: 40px; }
+    .hero p { font-size: 0.9rem; }
+}
 .contact-section{
-    padding:30px 30px;
+    padding:40px 30px;
 
 }
 .contact-container{
