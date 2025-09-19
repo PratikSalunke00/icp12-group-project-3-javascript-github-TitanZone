@@ -333,3 +333,6 @@ box-shadow:0 10px 30px rgba(0,0,0,0.3);
     font-size: 0.9rem;
     margin-top: 5px;
 }
+.invalid {
+    border: 2px solid #ff4d4d;
+}
