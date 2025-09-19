@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -8,10 +9,12 @@ body{
     color:#e0e0e0;
     line-height: 1.6;
     overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif';
 }
 h1,h2,h3,h4{
     color: #ffffff;
     margin-bottom: 1rem;
+    font-family: 'Arial Rounded MT Bold','Helvetica Rounded',Arial,sans-serif;
 
 }
 h1{
@@ -23,8 +26,14 @@ h1{
     text-shadow: 0 0 10px rgba(78, 205,196, 0.3);
 }
 h2{
-    font-size: 2rem;
+    font-size: 40px;
     color: #4ecdc4;
+}
+h3{
+    font-size: 25px;
+}
+.info-small-items{
+    font-size: 20px;
 }
 P{
     margin-bottom: 1rem;
@@ -126,7 +135,8 @@ box-shadow:0 10px 30px rgba(0,0,0,0.3);
         .form-group label {
             display: block;
             margin-bottom: 0.5rem;
-            font-weight: 500;
+            font-weight: bold;
+            font-size: 20px;
         }
         .form-group input,
         .form-group textarea,
