@@ -138,4 +138,9 @@ function saveScore() {
   renderLeaderboard();
   nameInput.value = "";
 }
+function renderLeaderboard() {
+  leaderboardEl.innerHTML = leaderboard
+    .map((p, i) => `<div>${i + 1}. ${p.name} - ${p.score}</div>`)
+    .join("");
+}
 
