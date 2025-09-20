@@ -44,3 +44,17 @@ function generatePuzzle() {
   puzzleDisplay.textContent = question;
   currentAnswer = answer;
 }
+function startTimer() {
+  timeLeft = 30;
+  timeEl.textContent = timeLeft;
+  clearInterval(timerInterval);
+
+  timerInterval = setInterval(() => {
+    timeLeft--;
+    timeEl.textContent = timeLeft;
+    if (timeLeft <= 0) {
+      clearInterval(timerInterval);
+      endGame();
+    }
+  }, 1000);
+}
