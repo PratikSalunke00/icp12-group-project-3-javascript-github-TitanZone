@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math puzzle</title>
+    <link rel="stylesheet" href="./../css/mathpuzzle.css">
+</head>
+
+<body>
+   <header>
+    <header>
+    <h1>🎯 Math Puzzle Game</h1>
+    <div class="container">
+      <button id="startBtn" class="primary">Start</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+  </header>
+  <div class="game-grid">
+    <div class="left">
+      <div class="card">
+        <div class="puzzle">
+          <div id="puzzleDisplay" class="display">Press Start</div>
+          <input id="answerInput" class="answer" placeholder="Enter answer & press Enter" autocomplete="off">
+          <div class="stats">
+            <div class="badge">Score: <span id="score">0</span></div>
+            <div class="badge">Streak: <span id="streak">0</span></div>
+            <div class="badge">Time: <span id="timeLeft">--</span></div>
+          </div>
+          <div>
+            <button id="skipBtn">Skip</button>
+            <button id="hintBtn">Hint</button>
+          </div>
+          </div>
+      </div>
+
+      <div class="card">
+        <strong>History</strong>
+        <div id="history" class="history"></div>
+      </div>
+    </div>
+     <aside class="right">
+      <div class="card">
+        <strong>Leaderboard</strong>
+        <div id="leaderboard" class="leaderboard"></div>
+        <input id="nameInput" placeholder="Your name" style="margin-top:10px;width:100%">
+        <button id="saveScore" style="margin-top:8px;width:100%">Save Score</button>
+      </div>
+      
+      <div class="card">
+        <strong>How to Play</strong>
+        <ul style="font-size:14px;line-height:1.5">
+          <li>Solve puzzles before time runs out.</li>
+          <li>Correct answers = +Score & +Streak.</li>
+          <li>Wrong answers = -Score & reset streak.</li>
+          <li>Use Hint (costs points) or Skip (penalty).</li>
+          <li>Keyboard: Enter=Submit, S=Skip, H=Hint</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+  <script src="./../javascript/mathpuzzle.js"></script>
+</body>
+
+</html>
