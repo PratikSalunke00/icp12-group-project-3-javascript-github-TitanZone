@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href= "C:\Users\ADMIN\Desktop\icp12-group-project-3-javascript-github-TitanZone\css\price.css"/>
+</head>
+<body>
+    <h1>OUR <span >PRICES</span></h1>
+  <div class="pricing-container">
+    <!-- Silver -->
+    <div class="card">
+      <h2>Silver</h2>
+      <div class="price">$9.99</div>
+      <div class="duration">For 3 Months</div>
+      <ul>
+        <li><span class="check">✔</span> 15 Days Free Trial</li>
+        <li><span class="check">✔</span> Cancel Anytime</li>
+        <li><span class="check">✔</span> 24/7 Full Support</li>
+        <li><span class="cross">✘</span> Daily Coins / Diamonds</li>
+        <li><span class="cross">✘</span> Premium Games Access</li>
+      </ul>
+      <button onclick="openModal('Silver')">Check Out</button>
+    </div>
+    <!-- Gold -->
+    <div class="card">
+      <h2>Gold</h2>
+      <div class="price">$49.99</div>
+      <div class="duration">For 6 Months</div>
+      <ul>
+        <li><span class="check">✔</span> 15 Days Free Trial</li>
+        <li><span class="check">✔</span> Cancel Anytime</li>
+        <li><span class="check">✔</span> 24/7 Full Support</li>
+        <li><span class="check">✔</span> Daily Coins / Diamonds</li>
+        <li><span class="cross">✘</span> Premium Games Access</li>
+      </ul>
+      <button onclick="openModal('Gold')">Check Out</button>
+    </div>
+    <!-- Diamond -->
+    <div class="card">
+      <h2>Diamond</h2>
+      <div class="price">$99.99</div>
+      <div class="duration">For 12 Months</div>
+      <ul>
+        <li><span class="check">✔</span> 15 Days Free Trial</li>
+        <li><span class="check">✔</span> Cancel Anytime</li>
+        <li><span class="check">✔</span> 24/7 Full Support</li>
+        <li><span class="check">✔</span> Daily Coins / Diamonds</li>
+        <li><span class="check">✔</span> Premium Games Access</li>
+      </ul>
+      <button onclick="openModal('Diamond')">Check Out</button>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="checkoutModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="planName"></h2>
+      <p id="planFeatures"></p>
+      <button onclick="proceedPayment()">Proceed to Pay</button>
+    </div>
+  </div>
+
+ <script src="C:\Users\ADMIN\Desktop\icp12-group-project-3-javascript-github-TitanZone\javascript\price.js"></script>   
+</body>
+</html>
