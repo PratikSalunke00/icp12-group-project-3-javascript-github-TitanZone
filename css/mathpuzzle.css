@@ -24,3 +24,131 @@ header {
   top: 0;
   z-index: 100;
 }
+header h1 {
+  margin-bottom: 12px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+header .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.25s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+button.primary {
+  background: linear-gradient(45deg, #00c853, #4caf50);
+  color: #fff;
+}
+
+button.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+button:not(.primary) {
+  background: linear-gradient(45deg, #42a5f5, #1e88e5);
+  color: #fff;
+}
+
+button:not(.primary):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+.game-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr; 
+  gap: 25px;
+  margin: 25px auto;
+  width: 90%;
+  max-width: 1100px;
+  flex: 1;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 18px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  color: #fff;
+}
+
+.puzzle {
+  text-align: center;
+}
+
+.display {
+  font-size: 34px;
+  margin: 15px 0;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 0 3px 6px rgba(0,0,0,0.4);
+}
+
+.answer {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  margin: 12px 0;
+  outline: none;
+}
+
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+  gap: 8px;
+}
+
+.badge {
+  background: rgba(255,255,255,0.2);
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+.history,
+.leaderboard {
+  max-height: 180px;
+  overflow-y: auto;
+  font-size: 14px;
+  padding: 8px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.hist-item {
+  margin-bottom: 5px;
+}
+
