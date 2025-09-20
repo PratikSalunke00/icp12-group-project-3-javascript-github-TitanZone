@@ -111,3 +111,17 @@ function saveScore() {
   localStorage.setItem("typingScores", JSON.stringify(leaderboard));
   showScores();
 }
+
+function showScores() {
+  scoresEl.innerHTML = leaderboard
+    .map((s, i) => `<p>${i + 1}. ${s.name} - ${s.wpm} WPM</p>`)
+    .join("");
+}
+
+
+startBtn.addEventListener("click", startGame);
+inputEl.addEventListener("keydown", checkWord);
+saveBtn.addEventListener("click", saveScore);
+
+
+showScores();
