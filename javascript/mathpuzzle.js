@@ -101,4 +101,41 @@ function checkAnswer() {
   updateStats();
   answerInput.value = "";
 }
+function skipPuzzle() {
+  score -= 2;
+  streak = 0;
+  addHistory(`⏭️ Skipped: ${puzzleDisplay.textContent}`);
+  generatePuzzle();
+  updateStats();
+}
+
+function useHint() {
+  score -= 3;
+  addHistory(`💡 Hint: Answer starts with ${String(currentAnswer).charAt(0)}`);
+  updateStats();
+}
+
+function addHistory(msg) {
+  const div = document.createElement("div");
+  div.className = "hist-item";
+  div.textContent = msg;
+  historyEl.prepend(div);
+}
+
+function updateStats() {
+  scoreEl.textContent = score;
+  streakEl.textContent = streak;
+}
+
+function saveScore() {
+  const name = nameInput.value.trim();
+  if (!name) return alert("Enter your name!");
+
+  leaderboard.push({ name, score });
+  leaderboard.sort((a, b) => b.score - a.score);
+  leaderboard = leaderboard.slice(0, 5);
+  localStorage.setItem("leaderboard", JSON.stringify(leaderboard));
+  renderLeaderboard();
+  nameInput.value = "";
+}
 
