@@ -11,3 +11,10 @@ const historyEl = document.getElementById("history");
 const leaderboardEl = document.getElementById("leaderboard");
 const nameInput = document.getElementById("nameInput");
 const saveScoreBtn = document.getElementById("saveScore");
+
+let score = 0;
+let streak = 0;
+let timeLeft = 30;
+let currentAnswer = null;
+let timerInterval = null;
+let leaderboard = JSON.parse(localStorage.getItem("leaderboard")) || [];
