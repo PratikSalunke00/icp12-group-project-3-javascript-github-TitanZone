@@ -151,4 +151,27 @@ button:not(.primary):hover {
 .hist-item {
   margin-bottom: 5px;
 }
+@media (max-width: 900px) {
+  .game-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  .display {
+    font-size: 26px;
+  }
+  button {
+    width: 100%;
+    font-size: 1rem;
+  }
+  .stats {
+    flex-direction: column;
+    gap: 6px;
+  }
+}
+
 
