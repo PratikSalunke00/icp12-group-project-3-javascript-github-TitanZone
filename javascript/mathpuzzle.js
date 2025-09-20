@@ -58,3 +58,11 @@ function startTimer() {
     }
   }, 1000);
 }
+function startGame() {
+  score = 0;
+  streak = 0;
+  updateStats();
+  historyEl.innerHTML = "";
+  generatePuzzle();
+  startTimer();
+}
