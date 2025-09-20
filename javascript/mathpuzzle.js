@@ -66,3 +66,39 @@ function startGame() {
   generatePuzzle();
   startTimer();
 }
+function resetGame() {
+  clearInterval(timerInterval);
+  puzzleDisplay.textContent = "Press Start";
+  answerInput.value = "";
+  timeEl.textContent = "--";
+  score = 0;
+  streak = 0;
+  updateStats();
+  historyEl.innerHTML = "";
+}
+
+function endGame() {
+  puzzleDisplay.textContent = "Game Over!";
+  answerInput.value = "";
+  answerInput.disabled = true;
+  setTimeout(() => (answerInput.disabled = false), 2000);
+}
+
+function checkAnswer() {
+  const userAnswer = parseInt(answerInput.value.trim());
+  if (isNaN(userAnswer)) return;
+
+  if (userAnswer === currentAnswer) {
+    score += 10;
+    streak++;
+    addHistory(`✅ Correct: ${puzzleDisplay.textContent} = ${userAnswer}`);
+    generatePuzzle();
+  } else {
+    score -= 5;
+    streak = 0;
+    addHistory(`❌ Wrong: ${puzzleDisplay.textContent} ≠ ${userAnswer}`);
+  }
+  updateStats();
+  answerInput.value = "";
+}
+
