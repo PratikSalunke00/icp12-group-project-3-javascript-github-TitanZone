@@ -13,10 +13,7 @@ body {
     color: white;
     /* background-color: black; */
 }
-/* html, body {
-  margin: 0;
-  padding: 0;
-} */
+
 
 a {
     text-decoration: none;
@@ -47,7 +44,8 @@ a {
 
     position: sticky;
     top: 0;
-    z-index: 10;
+    /* left: 0; */
+    z-index: 100;
 }
 .sign-up-tag{
     background-color:white;
@@ -68,12 +66,9 @@ a {
 .sidebar {
     background-color: #1f1c28;
     width: 340px;
-    /* border-radius: 1rem; 16px */
-    /* margin-right: 0.5rem; */
     height: 100vh;
-    /* opacity: ; */
     position: sticky;
-    
+    margin-top: 100px;  
 }
 
 .game-sidebar{
@@ -89,19 +84,9 @@ a {
     border-radius: 10px;
     font-size: larger;
     cursor: pointer;
-        position: sticky;
+    /* position: fixed; */
 
 }
-
-
-
-
-/* .top-game-btn {
-        padding: 20px;
-    margin: 20px;
-        border-radius: 10px;
-    font-size: larger;
-} */
 
 .game-sidebar:hover{
     outline: 1px solid white;
@@ -134,6 +119,7 @@ a {
 
 .rise-games-container{
     padding: 20px;
+        scroll-margin-top: 100px; 
 }
 
 .game{
@@ -163,3 +149,8 @@ a {
    border-radius: 0.5rem;
 }
 
+.top-games-container {
+    padding: 20px;
+    scroll-margin-top: 100px; 
+
+}
