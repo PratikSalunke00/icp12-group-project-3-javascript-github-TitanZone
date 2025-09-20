@@ -99,3 +99,15 @@ function gameOver(success) {
     quoteEl.textContent = `❌ Game Over! Your score is ${wpm} WPM.`;
   }
 }
+
+function saveScore() {
+  let wpm = parseInt(wpmEl.textContent);
+  if (wpm === 0) return alert("Finish typing first!");
+  let name = prompt("Enter your name:");
+  if (!name) return;
+  leaderboard.push({ name, wpm });
+  leaderboard.sort((a, b) => b.wpm - a.wpm);
+  leaderboard = leaderboard.slice(0, 5);
+  localStorage.setItem("typingScores", JSON.stringify(leaderboard));
+  showScores();
+}
