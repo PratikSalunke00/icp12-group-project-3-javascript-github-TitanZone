@@ -144,3 +144,19 @@ function renderLeaderboard() {
     .join("");
 }
 
+startBtn.addEventListener("click", startGame);
+resetBtn.addEventListener("click", resetGame);
+skipBtn.addEventListener("click", skipPuzzle);
+hintBtn.addEventListener("click", useHint);
+saveScoreBtn.addEventListener("click", saveScore);
+
+answerInput.addEventListener("keypress", (e) => {
+  if (e.key === "Enter") checkAnswer();
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key.toLowerCase() === "s") skipPuzzle();
+  if (e.key.toLowerCase() === "h") useHint();
+});
+renderLeaderboard();
+
