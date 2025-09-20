@@ -18,3 +18,29 @@ let timeLeft = 30;
 let currentAnswer = null;
 let timerInterval = null;
 let leaderboard = JSON.parse(localStorage.getItem("leaderboard")) || [];
+
+function generatePuzzle() {
+  const num1 = Math.floor(Math.random() * 20) + 1;
+  const num2 = Math.floor(Math.random() * 20) + 1;
+  const ops = ["+", "-", "*"];
+  const op = ops[Math.floor(Math.random() * ops.length)];
+  let question, answer;
+
+  switch (op) {
+    case "+":
+      question = `${num1} + ${num2}`;
+      answer = num1 + num2;
+      break;
+    case "-":
+      question = `${num1} - ${num2}`;
+      answer = num1 - num2;
+      break;
+    case "*":
+      question = `${num1} × ${num2}`;
+      answer = num1 * num2;
+      break;
+  }
+
+  puzzleDisplay.textContent = question;
+  currentAnswer = answer;
+}
