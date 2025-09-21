@@ -13,3 +13,14 @@ document.getElementById("rise-btn").addEventListener("click", function() {
         }
     );
 });
+
+
+
+
+
+
+
+
+
+
+document.getElementById('site-year').textContent = new Date().getFullYear();

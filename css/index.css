@@ -63,12 +63,23 @@ a {
     justify-content: space-around;
 }
 
+.main-content {
+    display: flex;
+    flex-direction: row;
+    /* overflow: hidden; */
+    height: 100vh;
+    /* max-height: fit-content; */
+    position: fixed ;
+}
+
+
 .sidebar {
     background-color: #1f1c28;
     width: 340px;
     height: 100vh;
+    min-height: 100vh;
     position: sticky;
-    margin-top: 100px;  
+    /* margin-top: 100px;   */
 }
 
 .game-sidebar{
@@ -92,16 +103,14 @@ a {
     outline: 1px solid white;
 }
 
-.main-content {
-    display: flex;
-    flex-direction: row;
-}
 
 .container {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     overflow: scroll;
     background-color:black;
+     overflow-x: hidden;
+     min-height:100vh;
     /* opacity: 0.6; */
 }
 
@@ -154,3 +163,101 @@ a {
     scroll-margin-top: 100px; 
 
 }
+
+
+
+
+
+
+
+.footer {
+    background-color: #37353E;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    /* height: 100vh; */
+}
+
+.title-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    /* padding:20px; */
+    
+}
+
+.quick-links , .legal ,.connect{
+    display: flex;
+    flex-direction: column;
+    line-height:30px;
+    padding: 40px;
+}
+
+.footer-content-names{
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.footer-content-names-download{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.icon{
+    height: 30px;
+    margin-right: 8px;
+}
+
+
+.copy-right {
+    text-align: center;
+    padding: 10px;
+    background: #0069e2; /* or your footer background */
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;   /* only hide horizontal scroll */
+}
+
+/* .container {
+    width: 100%;
+    min-height: 100vh;   
+    overflow-x: hidden;  
+    overflow-y: visible; 
+} */
+
+/* .main-content {
+    display: flex;
+    flex-direction: row;
+   
+    height: auto;        
+} */
+
+/* body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;   
+    overflow-y: auto;     
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    height: auto;        
+    min-height: 100vh;
+    position: relative;  
+}
+*/
+    /* .container {
+        width: 100%;
+        background-color: black;
+        overflow-x: hidden;
+        overflow-y: scroll;    
+        min-height: 100vh;
+    }  */
