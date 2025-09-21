@@ -108,4 +108,82 @@
             grid-column: 3;
             grid-row: 2;
         }
+        .down {
+            grid-column: 2;
+            grid-row: 3;
+        }
+        
+        .action-buttons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .action-btn {
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .start-btn {
+            background-color: #4ecca3;
+            color: #232931;
+        }
+        
+        .start-btn:hover {
+            background-color: #3db593;
+        }
+        
+        .pause-btn {
+            background-color: #f8b400;
+            color: #232931;
+        }
+        
+        .pause-btn:hover {
+            background-color: #e09c00;
+        }
+        
+        .reset-btn {
+            background-color: #e94560;
+            color: #fff;
+        }
+        
+        .reset-btn:hover {
+            background-color: #d32a45;
+        }
+        
+        .instructions {
+            margin-top: 20px;
+            text-align: center;
+            color: #eeeeee;
+            line-height: 1.5;
+            max-width: 400px;
+        }
+        
+        .game-over {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(35, 41, 49, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid #e94560;
+            text-align: center;
+            display: none;
+            z-index: 10;
+        }
+        
+        .game-over h2 {
+            color: #e94560;
+            margin-bottom: 15px;
+        }
+        
+        .game-over p {
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
         
