@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller Game</title>
+     <link rel="stylesheet" href="../css/roll-dice-game.css" />
+      <div class="container">
+        <h1>🎲 Dice Roller</h1>
+        
+        <div class="game-info">
+            <p>Select how many dice to roll, then click "Roll Dice" to play!</p>
+        </div>
+        
+        <div class="dice-count">
+            <button class="count-btn" id="decrease-btn">-</button>
+            <div class="count-display" id="dice-count">1</div>
+            <button class="count-btn" id="increase-btn">+</button>
+        </div>
+        
+        <div class="dice-container" id="dice-container">
+            <div class="dice" data-value="1">
+                <div class="dice-value"></div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button class="btn btn-roll" id="roll-btn">Roll Dice</button>
+            <button class="btn btn-clear" id="clear-btn">Clear History</button>
+        </div>
+        
+        <div class="history">
+            <h3>Roll History</h3>
+            <div id="history-list"></div>
+        </div>
+    </div>
+    <script src="../javascript/roll-dice-game.js"></script>
+    </body>
+</html>

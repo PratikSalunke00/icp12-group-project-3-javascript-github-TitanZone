@@ -1,0 +1,277 @@
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: #fff;
+        }
+        
+        .container {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            width: 90%;
+            max-width: 600px;
+            text-align: center;
+        }
+        
+        h1 {
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .game-info {
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+        
+        .dice-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .dice {
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #333;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .dice::before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            right: 5px;
+            bottom: 5px;
+            border-radius: 8px;
+            background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+            z-index: 1;
+        }
+        
+        .dice-value {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            background-color: #FF5722;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            font-size: 1rem;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 4px 0 #D84315;
+            transition: all 0.2s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 0 #D84315;
+        }
+        
+        .btn:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 0 #D84315;
+        }
+        
+        .btn-roll {
+            background-color: #4CAF50;
+            box-shadow: 0 4px 0 #388E3C;
+        }
+        
+        .btn-roll:hover {
+            box-shadow: 0 6px 0 #388E3C;
+        }
+        
+        .btn-roll:active {
+            box-shadow: 0 2px 0 #388E3C;
+        }
+        
+        .btn-clear {
+            background-color: #F44336;
+            box-shadow: 0 4px 0 #D32F2F;
+        }
+        
+        .btn-clear:hover {
+            box-shadow: 0 6px 0 #D32F2F;
+        }
+        
+        .btn-clear:active {
+            box-shadow: 0 2px 0 #D32F2F;
+        }
+        
+        .history {
+            margin-top: 30px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 15px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+        
+        .history h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .history-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .dice-count {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        
+        .count-btn {
+            background-color: rgba(255, 255, 255, 0.2);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .count-btn:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+        
+        .count-display {
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+        }
+        
+        /* Dice dots styling */
+        .dice[data-value="1"] .dice-value::before {
+            content: "•";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .dice[data-value="2"] .dice-value::before {
+            content: "•\00a0\00a0\00a0\00a0\00a0•";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            white-space: pre;
+        }
+        
+        .dice[data-value="3"] .dice-value::before {
+            content: "•\00a0\00a0\00a0\00a0\00a0•\A•";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            white-space: pre;
+        }
+        
+        .dice[data-value="4"] .dice-value::before {
+            content: "•\00a0\00a0\00a0\00a0\00a0•\A•\00a0\00a0\00a0\00a0\00a0•";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            white-space: pre;
+        }
+        
+        .dice[data-value="5"] .dice-value::before {
+            content: "•\00a0\00a0\00a0\00a0\00a0•\A\00a0\00a0•\A•\00a0\00a0\00a0\00a0\00a0•";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            white-space: pre;
+        }
+        
+        .dice[data-value="6"] .dice-value::before {
+            content: "•\00a0\00a0\00a0\00a0\00a0•\A•\00a0\00a0\00a0\00a0\00a0•\A•\00a0\00a0\00a0\00a0\00a0•";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            white-space: pre;
+        }
+        
+        /* Animation */
+        @keyframes roll {
+            0% { transform: rotate(0deg); }
+            25% { transform: rotate(90deg); }
+            50% { transform: rotate(180deg); }
+            75% { transform: rotate(270deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .rolling {
+            animation: roll 0.5s ease-out;
+        }
+        
+        @media (max-width: 500px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .dice {
+                width: 70px;
+                height: 70px;
+                font-size: 2rem;
+            }
+            
+            .btn {
+                padding: 10px 20px;
+            }
+        }

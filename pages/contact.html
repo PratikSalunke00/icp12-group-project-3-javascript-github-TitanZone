@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact Page</title>
+      <link rel="stylesheet" href="../css/contact.css" />
+</head>
+<body>
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Get In Touch With Titanzone</h1>
+            <p>We're here to answer your questions and listen to your feedback.Let's level up your gaming experince together!</p>
+
+        </div>
+    </section>
+    <section class="contact-section">
+        <div class="container">
+            <h2 >Contact Us</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="info-item">
+                        <i><i class="fa-solid fa-location-dot" style="color: #ff0000;"></i> </i>
+                        <div>
+                            <h4 class="info-small-items">Address</h4>
+                            <p>123,Gaming street</p>
+                        </div>
+                    </div>
+                     <div class="info-item">
+                        <i><i <i class="fa-solid fa-phone" style="color: #808080;"></i> </i>
+                        <div>
+                            <h4 class="info-small-items">Phone</h4>
+                            <p><a href="tel:+1(555) 123-GAME" style="text-decoration: none; color: #ffff;">+1(555) 123-GAME</a></p>
+                        </div>
+                    </div>
+                     <div class="info-item">
+                        <i> <i class="fa-regular fa-envelope"></i></i>
+                        <div>
+                            <h4 class="info-small-items">Email</h4>
+                            <p ><a href="mailto:info@titanzone.com"style="text-decoration: none; color: #ffff;">info@titanzone.com</a></p>
+                        </div>
+                    </div>
+                     <div class="info-item">
+                        <i><i class="fa-solid fa-clock-rotate-left" style="color: #c8b6b6;"></i> </i>
+                        <div>
+                            <h4 class="info-small-items">Bussiness Hours</h4>
+                            <p>Monday-Friday:9AM -6PM<br>Weekend:10AM-4PM</p>
+                        </div>
+                    </div>
+                     <h3 style="margin-top: 2rem;">Follow Us</h3>
+                     <div class="social-links">
+                        <a href="#" title="Twitter"><img src="../icons/twitter (1).png"/></a>
+                          <a href="#" title="Instagram"><img src="../icons/insta.png"/></a>
+                          <a href="#" title="Facebook"><img src="../icons/facebook.png"/></a>
+                            <a href="#" title="Youtube"><img src="../icons/yt.png"/></a>
+
+                     </div>
+                </div>
+                 <div class="contact-form">
+                    <h3>Send us a message</h3>
+                    <div id="form-success">
+                        Thank you for your message! We'll get back to you soon.
+                    </div>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                            <div class="error">Please enter your name</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                            <div class="error">Please enter a valid email address</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="partnership">Partnership Opportunities</option>
+                                <option value="feedback">Feedback & Suggestions</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <div class="error">Please select a subject</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                            <div class="error">Please enter your message</div>
+                        </div>
+                        <button type="submit" class="btn pulse">Send Message</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
+       <section class="map-section">
+        <div class="container">
+            <h2>Find Us</h2>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3780.6464122358157!2d73.79453307372366!3d18.63496706567276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTjCsDM4JzA1LjkiTiA3M8KwNDcnNDkuNiJF!5e0!3m2!1sen!2sin!4v1758255481882!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../javascript/contact.js"></script>
+</body>
+</html>
