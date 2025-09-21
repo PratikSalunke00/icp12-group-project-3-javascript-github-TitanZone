@@ -186,4 +186,22 @@
             margin-bottom: 15px;
             font-size: 1.2rem;
         }
+          @media (max-width: 500px) {
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .arrow-controls {
+                grid-template-columns: repeat(3, 50px);
+                grid-template-rows: repeat(3, 50px);
+            }
+            
+            .control-btn {
+                font-size: 20px;
+            }
+            
+            .action-btn {
+                padding: 10px 20px;
+            }
+        }
         
