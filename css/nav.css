@@ -1,0 +1,70 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+    color: white;
+    /* position: fixed; */
+    width: 100%;
+
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.nav {
+    background-color: #37353E;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    width: 100%;
+    /* width: 100vh; */
+    padding: 0 60px;
+
+    position: sticky;
+    top: 0;
+    
+    z-index: 100;
+        /* position: fixed; */
+
+}
+
+.pages {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-around;
+}
+
+.sign-up-tag{
+    background-color:white;
+    color: black;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 20px;
+}

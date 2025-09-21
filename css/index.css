@@ -14,7 +14,7 @@ body {
     /* background-color: black; */
 }
 
-
+/* 
 a {
     text-decoration: none;
     color: #fff;
@@ -32,7 +32,7 @@ a {
     font-weight: bolder;
 }
 
-.header {
+.nav {
     background-color: #37353E;
     display: flex;
     flex-direction: row;
@@ -44,15 +44,8 @@ a {
 
     position: sticky;
     top: 0;
-    /* left: 0; */
+
     z-index: 100;
-}
-.sign-up-tag{
-    background-color:white;
-    color: black;
-    padding: 4px 8px;
-    border: none;
-    border-radius: 20px;
 }
 
 .pages {
@@ -61,7 +54,16 @@ a {
     align-items: center;
     gap: 40px;
     justify-content: space-around;
-}
+} */
+
+/* .sign-up-tag{
+    background-color:white;
+    color: black;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 20px;
+} */
+
 
 .main-content {
     display: flex;
@@ -69,7 +71,7 @@ a {
     /* overflow: hidden; */
     height: 100vh;
     /* max-height: fit-content; */
-    position: fixed ;
+    position: fixed;
 }
 
 
@@ -82,7 +84,7 @@ a {
     /* margin-top: 100px;   */
 }
 
-.game-sidebar{
+.game-sidebar {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -99,7 +101,7 @@ a {
 
 }
 
-.game-sidebar:hover{
+.game-sidebar:hover {
     outline: 1px solid white;
 }
 
@@ -108,9 +110,9 @@ a {
     width: 100%;
     /* height: 100vh; */
     overflow: scroll;
-    background-color:black;
-     overflow-x: hidden;
-     min-height:100vh;
+    background-color: black;
+    overflow-x: hidden;
+    min-height: 100vh;
     /* opacity: 0.6; */
 }
 
@@ -126,24 +128,24 @@ a {
     padding: 20px;
 }
 
-.rise-games-container{
+.rise-games-container {
     padding: 20px;
-        scroll-margin-top: 100px; 
+    scroll-margin-top: 100px;
 }
 
-.game{
+.game {
     background-color: #21c61b;
     width: 240px;
     height: 280px;
     border-radius: 0.5rem;
-    padding:0.8rem;
+    padding: 0.8rem;
     /* margin: 2rem; */
     /* margin-left: 1.5rem; */
-     margin-top: 2rem; 
-     /* margin: 20px; */
+    margin-top: 2rem;
+    /* margin: 20px; */
 }
 
-.games{
+.games {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -151,16 +153,16 @@ a {
     /* gap: 5px; */
 }
 
-.game-img{
-   width:100%; 
-   height: 100%;
-   object-fit:cover;
-   border-radius: 0.5rem;
+.game-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
 }
 
 .top-games-container {
     padding: 20px;
-    scroll-margin-top: 100px; 
+    scroll-margin-top: 100px;
 
 }
 
@@ -174,90 +176,103 @@ a {
     background-color: #37353E;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-bottom: 40px;
     margin-top: 40px;
     /* height: 100vh; */
+    /* margin-bottom: 40px; */
 }
 
-.title-footer {
+
+.logo-name {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    /* padding:20px; */
-    
 }
 
-.quick-links , .legal ,.connect{
+.quick-links,
+.legal,
+.connect {
     display: flex;
     flex-direction: column;
-    line-height:30px;
-    padding: 40px;
+    line-height: 30px;
+    /* padding: 30px; */
 }
 
-.footer-content-names{
+.footer-content-names {
     margin-bottom: 20px;
     margin-top: 40px;
 }
 
-.footer-content-names-download{
+.footer-content-names-download {
     margin-top: 15px;
     margin-bottom: 20px;
 }
 
-.icon{
+.icon {
     height: 30px;
-    margin-right: 8px;
+    /* margin-right: 8px; */
 }
 
-
-.copy-right {
-    text-align: center;
-    padding: 10px;
-    background: #0069e2; /* or your footer background */
-    color: white;
-}
 
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;   /* only hide horizontal scroll */
+    overflow-x: hidden;
 }
 
-/* .container {
+.copy-right {
     width: 100%;
-    min-height: 100vh;   
-    overflow-x: hidden;  
-    overflow-y: visible; 
-} */
-
-/* .main-content {
-    display: flex;
-    flex-direction: row;
-   
-    height: auto;        
-} */
-
-/* body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;   
-    overflow-y: auto;     
+    text-align: center;
+    padding-bottom: 40px;
+    margin-bottom: 40px 0;
 }
 
-.main-content {
+hr {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.title-footer , .bb {
+    display: flex;
+    flex-direction: column;
+    width: auto;       
+    max-width: 300px;  
+    word-wrap: break-word; 
+    /* padding:40px; */
+    margin-top: 40px;
+    /* align-items: center; */
+    /* text-align: center; */
+}
+
+
+.address-contact{
+    margin-top: 15px;
+    /* font-size: ; */
     display: flex;
     flex-direction: row;
-    height: auto;        
-    min-height: 100vh;
-    position: relative;  
 }
-*/
-    /* .container {
-        width: 100%;
-        background-color: black;
-        overflow-x: hidden;
-        overflow-y: scroll;    
-        min-height: 100vh;
-    }  */
+
+.address-contact p {
+    /* font-size: 16px; */
+    /* line-height: 1.5; */
+    display: flex;
+    word-break: break-word; 
+    margin-top: 8px;        
+}
+
+
+.telephone , .mail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
