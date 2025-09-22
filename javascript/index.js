@@ -1,19 +1,19 @@
 const topgameimgs = [
   "images/tic-tac-toe.jpg",
-  "images/tic-tac-toe.jpg",
-  "images/tic-tac-toe.jpg",
-  "images/tic-tac-toe.jpg",
-  "images/tic-tac-toe.jpg",
-  "images/tic-tac-toe.jpg"
+  "images/simon-says.jpg",
+  "images/snake-game.jpg",
+  "images/math-game.jpg",
+  "images/roll-dice.jpg",
+  "images/typing-game.jpg"
 ];
 
 const topgamelinks = [
   "./pages/tic-tac-toe-game.html",
-  "./pages/tic-tac-toe-game.html",
-  "./pages/tic-tac-toe-game.html",
-  "./pages/tic-tac-toe-game.html",
-  "./pages/tic-tac-toe-game.html",
-  "./pages/tic-tac-toe-game.html"
+  "./pages/simon-says.html",
+  "./pages/snake-game.html",
+  "./pages/mathpuzzle.html",
+  "./pages/roll-dice-game.html",
+  "./pages/typinggame.html"
 ];
 
 const loadtopgames = () => {

@@ -11,7 +11,7 @@ body {
     padding: 0;
     overflow: hidden;
     color: white;
-    /* background-color: black; */
+    background-color: #0a0e17;
 }
 
 
@@ -111,7 +111,7 @@ a {
     width: 100%;
     /* height: 100vh; */
     overflow: scroll;
-    background-color: black;
+    /* background-color: black; */
     overflow-x: hidden;
     min-height: 100vh;
     /* opacity: 0.6; */
@@ -131,27 +131,24 @@ a {
 
 .rise-games-container {
     padding: 20px;
-    scroll-margin-top: 100px;
+    /* scroll-margin-top: 100px; */
 }
 
 .game {
-    background-color: #21c61b;
-    width: 240px;
-    height: 280px;
+    width: 340px;
+    height: 240px;
     border-radius: 0.5rem;
-    padding: 0.8rem;
-    /* margin: 2rem; */
-    /* margin-left: 1.5rem; */
+    /* padding: 0.8rem; */
     margin-top: 2rem;
-    /* margin: 20px; */
 }
 
 .games {
     display: flex;
+    /* flex-direction: row;  */
     flex-wrap: wrap;
-    justify-content: space-around;
-    /* padding: 15px; */
-    /* gap: 5px; */
+    justify-content:space-evenly ;
+
+    /* justify-content: flex-start; */
 }
 
 .game-img {
@@ -180,12 +177,52 @@ a {
     margin-top: 40px;
 }
 
-
 .logo-name {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
+}
+
+
+.namef {
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+
+
+.address-contact {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.address-contact p {
+    margin-top: 8px;
+}
+
+.telephone,
+.mail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.telephone a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.mail a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+        gap: 10px;
+
 }
 
 .quick-links,
@@ -246,88 +283,16 @@ hr {
 }
 
 
-.address-contact {
-    margin-top: 15px;
-    display: flex;
-    flex-direction: row;
-}
-
-.address-contact p {
-    display: flex;
-    word-break: break-word;
-    margin-top: 8px;
-}
-
-
-.telephone,
-.mail {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-align: center;
-    margin-top: 10px;
-}
-
-
-
-
-
-
-
-
-
-
-
-h1 {
-    text-align: center;
-    margin-top: 60px;
-}
 
 span {
     color: rgb(46, 167, 50);
 }
 
-.containerr {
-    width: fit-content;
-    margin: 60px auto;
-    position: relative;
-}
 
-.slide {
-    height: 350px;
-    width: 600px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.arrow {
-    height: 45px;
-    position: absolute;
-    top: 45%;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.left-arrow {
-    left: 0;
-}
-
-.left-arrow:hover {
-    transform: scale(0.8) translateX(-8px);
-
-}
-
-.right-arrow {
-    right: 0;
-}
-
-.right-arrow:hover {
-    transform: scale(0.8) translateX(8px);
-}
-
-
-
-
+/* h1 {
+    text-align: center;
+    margin-top: 60px;
+} */
 
 
 

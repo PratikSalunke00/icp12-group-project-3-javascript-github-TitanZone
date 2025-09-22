@@ -39,7 +39,7 @@ a {
 }
 
 .name {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bolder;
 }
 
@@ -80,7 +80,6 @@ a {
 
 .hamburger {
     display: none;
-
     cursor: pointer;
 }
 
