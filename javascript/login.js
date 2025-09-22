@@ -1,5 +1,4 @@
-<script>
-    
+
     function showSignup() {
       document.getElementById("loginBox").style.display = "none";
       document.getElementById("signupBox").style.display = "block";
@@ -49,4 +48,3 @@
 });
 
     
-  </script>
