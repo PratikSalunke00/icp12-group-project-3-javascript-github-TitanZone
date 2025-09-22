@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +19,16 @@ body {
 a {
     text-decoration: none;
     color: #fff;
+}
+
+#a {
+    text-decoration: none;
+    /* color: #fff; */
+    font-size: large;
+}
+
+#a:hover {
+    transform: scale(0.9);
 }
 
 .title {
@@ -47,9 +56,9 @@ a {
 
     position: sticky;
     top: 0;
-    
+
     z-index: 100;
-        /* position: fixed; */
+    /* position: fixed; */
 
 }
 
@@ -61,10 +70,49 @@ a {
     justify-content: space-around;
 }
 
-.sign-up-tag{
-    background-color:white;
+.sign-up-tag {
+    background-color: white;
     color: black;
     padding: 4px 8px;
     border: none;
     border-radius: 20px;
+}
+
+.hamburger {
+    display: none;
+
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .pages {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        background-color: #37353E;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .hamburger {
+        display: flex;
+        font-size: 24px;
+        color: white;
+    }
+
+    .nav {
+        padding: 0 40px;
+    }
+
+}
+
+
+
+@media (max-width: 340px) {
+    .nav {
+        padding: 0 20px;
+    }
 }

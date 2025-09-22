@@ -14,6 +14,7 @@ body {
     /* background-color: black; */
 }
 
+
 /* 
 a {
     text-decoration: none;
@@ -170,8 +171,6 @@ a {
 
 
 
-
-
 .footer {
     background-color: #37353E;
     display: flex;
@@ -179,8 +178,6 @@ a {
     justify-content: space-evenly;
     padding-bottom: 40px;
     margin-top: 40px;
-    /* height: 100vh; */
-    /* margin-bottom: 40px; */
 }
 
 
@@ -197,7 +194,6 @@ a {
     display: flex;
     flex-direction: column;
     line-height: 30px;
-    /* padding: 30px; */
 }
 
 .footer-content-names {
@@ -212,7 +208,6 @@ a {
 
 .icon {
     height: 30px;
-    /* margin-right: 8px; */
 }
 
 
@@ -240,39 +235,125 @@ hr {
     gap: 10px;
 }
 
-.title-footer , .bb {
+.title-footer,
+.bb {
     display: flex;
     flex-direction: column;
-    width: auto;       
-    max-width: 300px;  
-    word-wrap: break-word; 
-    /* padding:40px; */
+    width: auto;
+    max-width: 300px;
+    word-wrap: break-word;
     margin-top: 40px;
-    /* align-items: center; */
-    /* text-align: center; */
 }
 
 
-.address-contact{
+.address-contact {
     margin-top: 15px;
-    /* font-size: ; */
     display: flex;
     flex-direction: row;
 }
 
 .address-contact p {
-    /* font-size: 16px; */
-    /* line-height: 1.5; */
     display: flex;
-    word-break: break-word; 
-    margin-top: 8px;        
+    word-break: break-word;
+    margin-top: 8px;
 }
 
 
-.telephone , .mail {
+.telephone,
+.mail {
     display: flex;
     align-items: center;
     gap: 10px;
     text-align: center;
     margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+h1 {
+    text-align: center;
+    margin-top: 60px;
+}
+
+span {
+    color: rgb(46, 167, 50);
+}
+
+.containerr {
+    width: fit-content;
+    margin: 60px auto;
+    position: relative;
+}
+
+.slide {
+    height: 350px;
+    width: 600px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.arrow {
+    height: 45px;
+    position: absolute;
+    top: 45%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.left-arrow {
+    left: 0;
+}
+
+.left-arrow:hover {
+    transform: scale(0.8) translateX(-8px);
+
+}
+
+.right-arrow {
+    right: 0;
+}
+
+.right-arrow:hover {
+    transform: scale(0.8) translateX(8px);
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .background {
+        height: 60vh;
+    }
+}
+
+@media (max-width: 340px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .background {
+        height: 40vh;
+    }
+
+    .nav {
+        padding: 0 20px;
+    }
+
 }
