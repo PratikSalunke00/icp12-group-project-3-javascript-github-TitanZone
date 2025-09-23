@@ -33,3 +33,40 @@ function preload(){
   
 
 }
+
+function setup() {
+  createCanvas(600, 200);
+  
+  trex = createSprite(50,180,20,50);
+  trex.addAnimation("running", trex_running);
+  trex.addAnimation("collided" ,trex_collided);
+  trex.scale = 0.5;
+  
+  ground = createSprite(200,180,400,20);
+  ground.addImage("ground",groundImage);
+  ground.x = ground.width /2;
+  
+   gameOver = createSprite(300,100);
+  gameOver.addImage(gameOverImg);
+  
+  restart = createSprite(300,140);
+  restart.addImage(restartImg);
+  
+  gameOver.scale = 0.5;
+  restart.scale = 0.5;
+  
+  invisibleGround = createSprite(200,190,400,10);
+  invisibleGround.visible = false;
+  
+  
+  obstaclesGroup = createGroup();
+  cloudsGroup = createGroup();
+  
+ 
+  
+  trex.setCollider("rectangle",0,0,400,trex.height);
+  
+  
+  score = 0;
+  
+}
