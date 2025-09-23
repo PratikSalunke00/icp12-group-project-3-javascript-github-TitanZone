@@ -13,10 +13,10 @@ body{
 }
 
 .all-contact-page{
-    height: 100vh;
-    overflow: scroll;
-    padding-bottom: 20px;
-    overflow-x: hidden;
+  height: 100vh;
+  overflow: scroll;
+  padding-bottom: 20px;
+  overflow-x: hidden;
 }
 
 h1,h2,h3,h4{
@@ -43,7 +43,7 @@ h3{
 .info-small-items{
     font-size: 20px;
 }
-#paragraph{
+#paragrapgh{
     margin-bottom: 1rem;
 }
 .hero{
