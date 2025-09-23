@@ -24,7 +24,8 @@ a {
 #a {
     text-decoration: none;
     /* color: #fff; */
-    font-size: large;
+    /* font-size: larger; */
+      font-size:2.8vh;
 }
 
 #a:hover {
@@ -36,6 +37,13 @@ a {
     flex-direction: row;
     align-items: center;
     gap: 16px;
+
+                  /* font-size: 1.5rem; */
+      background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
 }
 
 .name {
@@ -53,14 +61,11 @@ a {
     width: 100%;
     /* width: 100vh; */
     padding: 0 60px;
-
     position: sticky;
     top: 0;
-
     z-index: 100;
     /* position: fixed; */
     line-height:normal;
-
 }
 
 .pages {
@@ -69,6 +74,17 @@ a {
     align-items: center;
     gap: 40px;
     justify-content: space-around;
+
+    
+}
+
+.pages a {
+                  
+      background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
 }
 
 .sign-up {
@@ -76,7 +92,9 @@ a {
     color: black;
     padding: 4px 8px;
     border: none;
-    border-radius: 20px;
+    border-radius: 20px; 
+  
+      
 }
 
 .hamburger {
@@ -134,12 +152,24 @@ a {
     flex-direction: row;
     align-items: center;
     gap: 10px;
+             
+      background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
 }
 
 
 .namef {
     font-size: 1.4rem;
     font-weight: bolder;
+         
+      background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
 }
 
 
@@ -148,10 +178,18 @@ a {
     display: flex;
     flex-direction: row;
     gap: 10px;
+
 }
 
 .address-contact p {
     margin-top: 8px;
+
+    
+      background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
 }
 
 .telephone,
@@ -161,6 +199,13 @@ a {
     gap: 10px;
     text-align: center;
     margin-top: 10px;
+
+          
+      background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
 }
 
 .telephone a{
@@ -168,6 +213,13 @@ a {
     flex-direction: row;
     align-items: center;
     gap: 10px;
+
+
+      background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
 }
 .mail a{
     display: flex;
@@ -175,24 +227,61 @@ a {
     align-items: center;
         gap: 10px;
 
+  
+      background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
+
 }
 
-.quick-links,
+.quick-links, 
 .legal,
 .connect {
     display: flex;
     flex-direction: column;
     line-height: 30px;
+
+        
+      background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
+}
+
+
+.quick-links a{
+            
+      background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
+
 }
 
 .footer-content-names {
     margin-bottom: 20px;
     margin-top: 40px;
+
+      background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
 }
 
 .footer-content-names-download {
     margin-top: 15px;
     margin-bottom: 20px;
+
+      background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
 }
 
 .icon {
@@ -200,17 +289,18 @@ a {
 }
 
 
-body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
 
 .copy-right {
     width: 100%;
     text-align: center;
     padding-bottom: 40px;
     margin-bottom: 40px 0;
+
+      background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
 }
 
 hr {
@@ -222,6 +312,7 @@ hr {
     display: flex;
     justify-content: space-around;
     gap: 10px;
+    
 }
 
 .title-footer,
@@ -232,11 +323,18 @@ hr {
     max-width: 300px;
     word-wrap: break-word;
     margin-top: 40px;
+
+
+      background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
 }
 
-span {
+/* span {
     color: rgb(46, 167, 50);
-}
+} */
 
 
 @media (max-width: 768px) {
@@ -261,7 +359,7 @@ span {
     }
 
     .nav {
-        padding: 0 20px;
+        padding: 0 15px;
     }
 
 }

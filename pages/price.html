@@ -4,87 +4,157 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="icon" href="../icons/logo-icon.png" />
+  <link rel="icon" href="../icons/logo-icon.png" />
 
   <title>Document</title>
-  <link rel="stylesheet" href="../css/price.css"/>
-      <link rel="stylesheet" href="../css/nav.css" />
+  <link rel="stylesheet" href="../css/price.css" />
+  <link rel="stylesheet" href="../css/nav-footer.css" />
 
 </head>
 
 <body>
-    <header class="nav">
-        <div class="title">
-            <img src="../icons/logo-icon.png" height="45" />
-            <p class="name">Titan Zone</p>
+  <header class="nav">
+    <div class="title">
+      <img src="../icons/logo-icon.png" height="45" />
+      <p class="name">Titan Zone</p>
+    </div>
+
+    <div class="pages" id="pages">
+      <a href="/index.html" id="a">Home</a>
+      <a href="/pages/about.html" id="a">About</a>
+      <a href="/pages/price.html" id="a">Pricing</a>
+      <a href="/pages/faq.html" id="a">Faq</a>
+      <a href="/pages/contact.html" id="a">Contact Us</a>
+      <a href="/pages/login.html" class="sign-up" id="a">Sign Up</a>
+    </div>
+    <div class="hamburger" id="hamburger" onclick="toggleHamburger()"><i class="fa-solid fa-bars"></i></div>
+  </header>
+
+
+  <div class="all-price-page">
+    <div class="price-content">
+      <h1>OUR <span>PRICES</span></h1>
+      <div class="pricing-container">
+        <!-- Silver -->
+        <div class="card">
+          <h2>Silver</h2>
+          <div class="price">$9.99</div>
+          <div class="duration">For 3 Months</div>
+          <ul>
+            <li><span class="check">✔</span> 15 Days Free Trial</li>
+            <li><span class="check">✔</span> Cancel Anytime</li>
+            <li><span class="check">✔</span> 24/7 Full Support</li>
+            <li><span class="cross">✘</span> Daily Coins / Diamonds</li>
+            <li><span class="cross">✘</span> Premium Games Access</li>
+          </ul>
+          <button onclick="openModal('Silver')">Check Out</button>
+        </div>
+        <!-- Gold -->
+        <div class="card">
+          <h2>Gold</h2>
+          <div class="price">$49.99</div>
+          <div class="duration">For 6 Months</div>
+          <ul>
+            <li><span class="check">✔</span> 15 Days Free Trial</li>
+            <li><span class="check">✔</span> Cancel Anytime</li>
+            <li><span class="check">✔</span> 24/7 Full Support</li>
+            <li><span class="check">✔</span> Daily Coins / Diamonds</li>
+            <li><span class="cross">✘</span> Premium Games Access</li>
+          </ul>
+          <button onclick="openModal('Gold')">Check Out</button>
+        </div>
+        <!-- Diamond -->
+        <div class="card">
+          <h2>Diamond</h2>
+          <div class="price">$99.99</div>
+          <div class="duration">For 12 Months</div>
+          <ul>
+            <li><span class="check">✔</span> 15 Days Free Trial</li>
+            <li><span class="check">✔</span> Cancel Anytime</li>
+            <li><span class="check">✔</span> 24/7 Full Support</li>
+            <li><span class="check">✔</span> Daily Coins / Diamonds</li>
+            <li><span class="check">✔</span> Premium Games Access</li>
+          </ul>
+          <button onclick="openModal('Diamond')">Check Out</button>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div id="checkoutModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2 id="planName"></h2>
+          <p id="planFeatures"></p>
+          <button onclick="proceedPayment()">Proceed to Pay</button>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="footer">
+
+      <div class="title-footer">
+        <div class="logo-name">
+          <img src="../icons/logo-icon.png" height="45" />
+          <p class="namef">Titan Zone</p>
         </div>
 
-        <div class="pages" id="pages">
-            <a href="/index.html" id="a">Home</a>
-            <a href="/pages/about.html" id="a">About</a>
-            <a href="/pages/price.html" id="a">Pricing</a>
-            <a href="/pages/faq.html" id="a">Faq</a>
-            <a href="/pages/contact.html" id="a">Contact Us</a>
-            <a href="/pages/login.html" class="sign-up" id="a">Sign Up</a>
+        <div class="address-contact">
+          <p> <a
+              href="https://www.google.com/maps?q=Titanzone+Gaming+Services,+HPRQ+G97,+Hinjawadi,+Pune,+Pimpri-Chinchwad,+Maharashtra+411057"
+              target="_blank" style="text-decoration: none; color: inherit; cursor: pointer;">
+              <img src="../icons/placeholder.png" height="30" />
+              <p> Titanzone Gaming Services,<br>
+                HPRQ+G97, Hinjawadi, Pune, Pimpri-Chinchwad, Maharashtra 411057</p>
+            </a>
+          </p>
         </div>
-        <div class="hamburger" id="hamburger" onclick="toggleHamburger()"><i class="fa-solid fa-bars"></i></div>
-    </header>
 
+        <div class="telephone">
+          <a href="tel:+91-7972014215"> <img src="../icons/telephone.png" class="icon" />+91-7972014215</a>
+        </div>
+        <div class="mail">
+          <a href="https://mail.google.com/" target="_blank"> <img src="../icons/mail.png"
+              class="icon" />info@titanzone.com</a>
+        </div>
 
-  <h1>OUR <span>PRICES</span></h1>
-  <div class="pricing-container">
-    <!-- Silver -->
-    <div class="card">
-      <h2>Silver</h2>
-      <div class="price">$9.99</div>
-      <div class="duration">For 3 Months</div>
-      <ul>
-        <li><span class="check">✔</span> 15 Days Free Trial</li>
-        <li><span class="check">✔</span> Cancel Anytime</li>
-        <li><span class="check">✔</span> 24/7 Full Support</li>
-        <li><span class="cross">✘</span> Daily Coins / Diamonds</li>
-        <li><span class="cross">✘</span> Premium Games Access</li>
-      </ul>
-      <button onclick="openModal('Silver')">Check Out</button>
-    </div>
-    <!-- Gold -->
-    <div class="card">
-      <h2>Gold</h2>
-      <div class="price">$49.99</div>
-      <div class="duration">For 6 Months</div>
-      <ul>
-        <li><span class="check">✔</span> 15 Days Free Trial</li>
-        <li><span class="check">✔</span> Cancel Anytime</li>
-        <li><span class="check">✔</span> 24/7 Full Support</li>
-        <li><span class="check">✔</span> Daily Coins / Diamonds</li>
-        <li><span class="cross">✘</span> Premium Games Access</li>
-      </ul>
-      <button onclick="openModal('Gold')">Check Out</button>
-    </div>
-    <!-- Diamond -->
-    <div class="card">
-      <h2>Diamond</h2>
-      <div class="price">$99.99</div>
-      <div class="duration">For 12 Months</div>
-      <ul>
-        <li><span class="check">✔</span> 15 Days Free Trial</li>
-        <li><span class="check">✔</span> Cancel Anytime</li>
-        <li><span class="check">✔</span> 24/7 Full Support</li>
-        <li><span class="check">✔</span> Daily Coins / Diamonds</li>
-        <li><span class="check">✔</span> Premium Games Access</li>
-      </ul>
-      <button onclick="openModal('Diamond')">Check Out</button>
-    </div>
-  </div>
+      </div>
 
-  <!-- Modal -->
-  <div id="checkoutModal" class="modal">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <h2 id="planName"></h2>
-      <p id="planFeatures"></p>
-      <button onclick="proceedPayment()">Proceed to Pay</button>
-    </div>
+      <div class="quick-links">
+        <h3 class="footer-content-names">Quick Links</h3>
+        <a href="/index.html">Home</a>
+        <a href="../pages/about.html">About</a>
+        <a href="../pages/price.html">Pricing</a>
+        <a href="../pages/faq.html">Faq</a>
+      </div>
+
+      <div class="legal">
+        <h3 class="footer-content-names">Leagal</h3>
+        <p>Terms & Conditions</p>
+        <p>Privacy Policy</p>
+      </div>
+
+      <div class="connect">
+        <h3 class="footer-content-names">Connect with us</h3>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/" target="instagram"><img src="../icons/insta.png" class="icon" /></a>
+          <a href="https://www.youtube.com/" target="youtube"><img src="../icons/yt.png" class="icon" /></a>
+          <a href="https://www.twitter.com/" target="twitter"><img src="../icons/twitter (1).png" class="icon" /></a>
+          <a href="https://www.facebook.com/" target="facebook"><img src="../icons/facebook.png" class="icon" /></a>
+        </div>
+
+        <h3 class="footer-content-names-download">Download the app</h3>
+        <div class="social-icons">
+          <a href="https://www.playstore.com/" target="facebook"><img src="../icons/playstore.png" class="icon" /></a>
+          <a href="https://www.apple.com/" target="facebook"><img src="../icons/apple-logo.png" class="icon" /></a>
+        </div>
+      </div>
+
+      <hr>
+      <div class="copy-right">
+        <p>© <span id="site-year"></span> Titan Zone. All rights reserved.</p>
+      </div>
+    </footer>
   </div>
 
   <script src="../javascript/price.js"></script>
