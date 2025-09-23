@@ -40,3 +40,56 @@ function setup() {
   enemy4.shapeColor = "red";
   enemy4.velocityY = -8;
 }
+
+function draw() {
+  background("white");
+
+  // enemy movement
+  enemy1.bounceOff(l1);
+  enemy2.bounceOff(l1);
+  enemy3.bounceOff(l1);
+  enemy4.bounceOff(l1);
+
+  enemy1.bounceOff(l7);
+  enemy2.bounceOff(l7);
+  enemy3.bounceOff(l7);
+  enemy4.bounceOff(l7);
+
+  // player movement
+  if (keyDown("RIGHT_ARROW")) {
+    player.x += 2;
+  }
+  if (keyDown("LEFT_ARROW")) {
+    player.x -= 2;
+  }
+
+  // reset if touched enemies
+  if (player.isTouching(enemy1) || player.isTouching(enemy2) || player.isTouching(enemy3) || player.isTouching(enemy4)) {
+    player.x = 55;
+    player.y = 170;
+    count++;
+  }
+
+  // win condition
+  if (player.isTouching(win)) {
+    stroke(0);
+    fill(0);
+    textSize(25);
+    text("You Win!", 150, 200);
+    text("Press R to Restart", 110, 310);
+  }
+
+  // restart manually
+  if (keyDown("R")) {
+    player.x = 55;
+    player.y = 170;
+    count = 0;
+  }
+
+  // death counter
+  fill(0);
+  textSize(16);
+  text("Death = " + count, 270, 54);
+
+  drawSprites();
+}
