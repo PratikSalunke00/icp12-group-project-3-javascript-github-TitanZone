@@ -1,210 +1,196 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-}
-
-body {
-    font-family: "Montserrat", sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    color: white;
-    /* background-color: black; */
-}
-
-a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.title {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 16px;
-}
-
-.name {
-    font-size: larger;
-    font-weight: bolder;
-}
-
-.header {
-    background-color: #37353E;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 65px;
-    width: 100%;
-    padding: 0 60px;
-
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-
-.pages {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    justify-content: space-around;
-}
-
-.sidebar {
-    background-color: #1f1c28;
-    width: 340px;
-    /* border-radius: 1rem; 16px */
-    /* margin-right: 0.5rem; */
-    height: 100vh;
-}
-
-.main-content {
-    display: flex;
-    flex-direction: row;
-}
-
-.container {
-    background-color: black;
-    width: 100%;
-    height: 100vh;
-    overflow: scroll;
-}
-
-.heading {
-    text-align: center;
-    margin: 10px 10px 0 0;
-}
-
-.info {
-    margin: 10px 30px;
-    background-color: #37353E;
-    color: white;
-    padding: 30px;
-    font-size: x-large;
-    border-radius: 5px;
-}
-
-.info1 {
-    margin-right: 60px;
-}
-
-.info2 {
-    margin-right: 60px;
-}
-
-.add {
-    display: flex;
-    margin: 50px 120px;
-    flex-direction: row-reverse;
-}
-
-
-.image {
-    height: 250px;
-    width: 800px;
-}
-
-.heading-img {
-    height: 250px;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-
-.section {
-    margin: 20px;
-}
-
-.team {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.team-member {
-    padding: 20px;
-    border-radius: 12px;
-    text-align: center;
-    transition: 0.3s;
-    border: 1px solid red;
-    margin: 40px;
-}
-
-.Founder {
-    height: 260px;
-    border-radius: 12px;
-    background-color: #37353E;
-}
-
-.mission {
-    display: flex;
-    margin: 0 120px;
-}
-
-.image1 {
-    height: 370px;
-}
-
-.comunity{
-    margin: 10px 30px;
-    background-color: #37353E;
-    color: white;
-    padding: 30px;
-    font-size: x-large;
-    border-radius: 5px;
-}
-
-@media screen and (max-width:700px){
-    .add{
-        display: block;
-        margin: 50px 100px;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Montserrat", sans-serif;
     }
 
-    .info{
-        font-size: large;
+    body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      color: white;
+      overflow-x: hidden;
     }
 
-    .image{
-        height: 200px;
-        width: 400px;
-        margin-left: 30px;
+    a {
+      text-decoration: none;
+      color: #fff;
     }
 
-    .info{
-        width: 400px;
-        
+    .header {
+      background-color: #37353E;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 65px;
+      width: 100%;
+      padding: 0 60px;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .name {
+      font-size: larger;
+      font-weight: bolder;
+    }
+
+    .pages {
+      display: flex;
+      gap: 40px;
+    }
+
+    .container {
+      width: 100%;
+      min-height: 100vh;
+      overflow-y: auto;
+    }
+
+    .heading {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .info {
+      margin: 10px 30px;
+      background-color: #37353E;
+      padding: 30px;
+      font-size: x-large;
+      border-radius: 5px;
     }
 
     .info1{
-        margin-right: 0;
+        font-size: large;
     }
 
     .info2{
-        margin-left: 30px;
+        margin-left: 40px;
     }
 
-    .mission{
-        display: block;
-        margin: 0 90px;
+    .add {
+      display: flex;
+      margin: 50px 120px;
+      gap: 30px;
+      flex-direction: row-reverse;
     }
 
-    .image1{
-        width: 500px;
+    .image {
+      height: 250px;
+      width: 800px;
+      border-radius: 10px;
+      object-fit: cover;
     }
 
-    .section{
-        width: 500px;
-        margin-left: 0;
-        
+    .mission {
+      display: flex;
+      margin: 0 120px;
+      gap: 30px;
     }
 
-    .team{
-        display: block;
+    .image1 {
+      height: 370px;
+      border-radius: 10px;
+    }
+
+    .comunity {
+      margin: 30px;
+      background-color: #37353E;
+      padding: 30px;
+      font-size: x-large;
+      border-radius: 5px;
+    }
+
+    /* Team Slider */
+    .team {
+      width: fit-content;
+      margin: 50px auto;
+      position: relative;
+      text-align: center;
+    }
+
+    .slide {
+      height: 500px;
+      width: 370px;
+      object-fit: cover;
+      display: block;
+      border-radius: 10px;
+    }
+
+    .team-prev,
+    .team-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 50%;
+      height: 50px;
+      width: 50px;
+    }
+
+    .team-prev {
+      left: -60px;
+    }
+
+    .team-next {
+      right: -60px;
+    }
+
+    .caption {
+      margin-top: 10px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    #sub-name {
+      font-size: 16px;
+      font-weight: normal;
+      color: #ccc;
     }
 
     
-}
+
+    /* Responsive */
+    @media screen and (max-width: 768px) {
+      .add,
+      .mission {
+        display: block;
+        margin: 20px;
+        
+      }
+
+      .image,
+      .image1 {
+        width: 100%;
+        height: auto;
+      }
+
+      .info{
+        font-size: large;
+      }
+
+      .slide {
+        width: 100%;
+        height: auto;
+      }
+
+      .team-prev {
+        left: 10px;
+      }
+
+      .team-next {
+        right: 10px;
+      }
+
+      .comunity{
+        font-size: large;
+      }
+    }
