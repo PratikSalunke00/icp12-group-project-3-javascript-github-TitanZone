@@ -16,13 +16,13 @@ else {
 document.getElementById("greeting").innerText = message;
 
 const images = [
-    { src: "pratikSalunke.jpg", main: "Pratik Salunke", sub: "Founder & Pro-Gamer" },
-    { src: "omKadam.jpg", main: "Om Kadam", sub: "Co-Founder" },
-    { src: "ashish-Mathpati.jpg", main: "Ashish Mathpathi", sub: "Web-Developer & Gamer" },
+    { src: "../images/pratikSalunke.jpg", main: "Pratik Salunke", sub: "Founder & Pro-Gamer" },
+    { src: "../images/omKadam.jpg", main: "Om Kadam", sub: "Co-Founder" },
+    { src: "../images/ashish-Mathpati.jpg", main: "Ashish Mathpathi", sub: "Web-Developer & Gamer" },
     { src: "", main: "", sub: "Web-Developer" },
-    { src: "shreyaharde.jpg", main: "Shreya Harde", sub: "Web-Developer & Reviewer" },
-    { src: "kanchanKadam.jpg", main: "Kanchan Kadam", sub: "Streamer & Reviewer" },
-    { src: "rahul.jpg", main: "Rahul Naktode", sub: "Pro-Gamer & Streamer" }
+    { src: "../images/shreyaharde.jpg", main: "Shreya Harde", sub: "Web-Developer & Reviewer" },
+    { src: "../images/kanchanKadam.jpg", main: "Kanchan Kadam", sub: "Streamer & Reviewer" },
+    { src: "../images/rahul.jpg", main: "Rahul Naktode", sub: "Pro-Gamer & Streamer" }
 ];
 
 let index = 0;
