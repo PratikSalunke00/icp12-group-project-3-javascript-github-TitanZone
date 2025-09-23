@@ -1,0 +1,91 @@
+body {
+      font-family: Arial, sans-serif;
+      background: #222;
+      color: white;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .road {
+      position: relative;
+      width: 100%;
+      height: 150px;
+      background: #333;
+      margin-top: 50px;
+      border-top: 5px dashed #777;
+      border-bottom: 5px dashed #777;
+    }
+
+    .car {
+      position: absolute;
+      top: 50px;
+      left: -100px;
+      width: 80px;
+      height: 40px;
+      background: red;
+      border-radius: 5px;
+      transition: left 0.2s linear;
+    }
+
+    .car1 {
+      position: absolute;
+      top: 50px;
+      left: 1500px;
+      width: 80px;
+      height: 40px;
+      background: rgb(7, 255, 44);
+      border-radius: 5px;
+      transition: left 0.2s linear;
+    }
+
+    .car2 {
+      position: absolute;
+      top: 50px;
+      left: -400px;
+      width: 80px;
+      height: 40px;
+      background: rgb(7, 255, 44);
+      border-radius: 5px;
+      transition: left 0.2s linear;
+    }
+
+    .traffic-light {
+      margin-top: 20px;
+      width: 60px;
+      height: 150px;
+      background: #111;
+      border-radius: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 10px;
+    }
+
+    .light {
+      width: 40px;
+      height: 40px;
+      margin: 10px auto;
+      border-radius: 50%;
+      background: grey;
+    }
+
+    .red.active {
+      background: red;
+    }
+
+    .green.active {
+      background: green;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      background: #08f;
+      color: white;
+    }
+    button:hover {
+      background: #06c;
+    }
