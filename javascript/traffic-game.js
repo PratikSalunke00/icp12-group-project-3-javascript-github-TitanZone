@@ -34,4 +34,7 @@ let green = false;
       car1Pos -= 5;
       if (car1Pos < -100) car1Pos = window.innerWidth + 100;
     }
+    car.style.left = carPos + "px";
+    car1.style.left = car1Pos + "px";
+    car2.style.left = car2Pos + "px"; 
   }
