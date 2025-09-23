@@ -12,14 +12,14 @@
     function preload() {
 
       //load images
-      fruit1 = loadImage("fruit1.png");
-      fruit2 = loadImage("fruit2.png");
-      fruit3 = loadImage("fruit3.png");
-      fruit4 = loadImage("fruit4.png");
-      monsterImage1 = loadImage("alien1.png");
-      monsterImage2 = loadImage("alien2.png");
-      swordImage = loadImage("sword.png");
-      gameoverImage = loadImage("gameover.png")
+      fruit1 = loadImage("./../images/fruit1.png");
+      fruit2 = loadImage("./../images/fruit2.png");
+      fruit3 = loadImage("./../images/fruit3.png");
+      fruit4 = loadImage("./../images/fruit4.png");
+      monsterImage1 = loadImage("./../images/alien1.png");
+      monsterImage2 = loadImage("./../images/alien2.png");
+      swordImage = loadImage("./../images/sword.png");
+      gameoverImage = loadImage("./../images/gameover.png")
 
     }
 
