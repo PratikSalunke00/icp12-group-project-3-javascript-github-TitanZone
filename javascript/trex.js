@@ -31,7 +31,5 @@ function preload(){
    restartImg = loadImage("./../images/restart.png")
   gameOverImg = loadImage("./../images/gameOver.png")
   
-  jumpSound = loadSound("jump.mp3")
-  dieSound = loadSound("die.mp3")
-  checkPointSound = loadSound("checkPoint.mp3")
+
 }
