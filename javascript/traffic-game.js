@@ -8,3 +8,14 @@ let green = false;
   let carPos = -100;
   let car1Pos = 1550;
   let car2Pos = -600;
+
+   function toggleLight() {
+    green = !green;
+    if (green) {
+      redLight.classList.remove("active");
+      greenLight.classList.add("active");
+    } else {
+      greenLight.classList.remove("active");
+      redLight.classList.add("active");
+    }
+  }
