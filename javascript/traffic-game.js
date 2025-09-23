@@ -19,3 +19,19 @@ let green = false;
       redLight.classList.add("active");
     }
   }
+
+  function moveCar() {
+    if (green) {
+      
+      carPos += 5;
+      if (carPos > window.innerWidth) carPos = -200;
+
+      
+      car2Pos += 5;
+      if (car2Pos > window.innerWidth) car2Pos = -300;
+
+
+      car1Pos -= 5;
+      if (car1Pos < -100) car1Pos = window.innerWidth + 100;
+    }
+  }
