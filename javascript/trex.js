@@ -184,3 +184,21 @@ function spawnObstacles(){
     obstaclesGroup.add(obstacle);
  }
 }
+
+function spawnClouds() {
+  //write code here to spawn the clouds
+  if (frameCount % 60 === 0) {
+     cloud = createSprite(600,100,40,10);
+    cloud.y = Math.round(random(10,60));
+    cloud.addImage(cloudImage);
+    cloud.scale = 0.5;
+    cloud.velocityX = -3;
+    
+    cloud.lifetime = 134;
+    
+    cloud.depth = trex.depth;
+    trex.depth = trex.depth + 1;
+    
+    cloudsGroup.add(cloud);
+    }
+}
