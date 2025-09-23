@@ -9,6 +9,9 @@ body {
         font-family: Arial, sans-serif;
         color: white;
     }
+    .heading{
+        align-items: center;
+    }
 
     #game-board {
         width: 600px;
