@@ -10,6 +10,10 @@ body {
         color: white;
     }
 
+    .heading{
+        align-items: center;
+    }
+
     #game-board {
         width: 600px;
         height: 400px;
