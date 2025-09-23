@@ -37,4 +37,6 @@ let green = false;
     car.style.left = carPos + "px";
     car1.style.left = car1Pos + "px";
     car2.style.left = car2Pos + "px"; 
+
+    setInterval(moveCar, 100);
   }
