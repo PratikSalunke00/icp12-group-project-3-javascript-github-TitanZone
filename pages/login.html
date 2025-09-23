@@ -4,30 +4,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../icons/logo-icon.png" />
+
   <title>Document</title>
   <link rel="stylesheet" href="../css/login.css" />
-  <link rel="stylesheet" href="./css/nav.css" />
+  <link rel="stylesheet" href="../css/nav.css" />
 </head>
 
 <body>
-  <div class="box" id="loginBox">
-    <h2>Login</h2>
-    <form id="loginForm">
-      <input type="email" id="loginEmail" placeholder="Email" required><br>
-      <input type="password" id="loginPassword" placeholder="Password" required><br>
-      <button type="submit">Login</button>
-    </form>
-    <span class="link" onclick="showSignup()">Don't have an account? <b>Sign Up</b></span>
-  </div>
+  <header class="nav">
+    <div class="title">
+      <img src="../icons/logo-icon.png" height="45" />
+      <p class="name">Titan Zone</p>
+    </div>
 
-  <div class="box" id="signupBox" style="display:none;">
-    <h2>Sign Up</h2>
-    <form id="signupForm">
-      <input type="email" id="signupEmail" placeholder="Email" required><br>
-      <input type="password" id="signupPassword" placeholder="Password" required><br>
-      <button type="submit">Sign Up</button>
-    </form>
-    <span class="link" onclick="showLogin()">Already have an account? <b>Login</b></span>
+    <div class="pages" id="pages">
+      <a href="/index.html" id="a">Home</a>
+      <a href="/pages/about.html" id="a">About</a>
+      <a href="/pages/price.html" id="a">Pricing</a>
+      <a href="/pages/faq.html" id="a">Faq</a>
+      <a href="/pages/contact.html" id="a">Contact Us</a>
+      <a href="/pages/login.html" class="sign-up" id="a">Sign Up</a>
+    </div>
+    <div class="hamburger" id="hamburger" onclick="toggleHamburger()"><i class="fa-solid fa-bars"></i></div>
+  </header>
+
+  <div class="all-login-page">
+    <div class="box" id="loginBox">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <input type="email" id="loginEmail" placeholder="Email" required><br>
+        <input type="password" id="loginPassword" placeholder="Password" required><br>
+        <button type="submit">Login</button>
+      </form>
+      <span class="link" onclick="showSignup()">Don't have an account? <b>Sign Up</b></span>
+    </div>
+
+    <div class="box" id="signupBox" style="display:none;">
+      <h2>Sign Up</h2>
+      <form id="signupForm">
+        <input type="email" id="signupEmail" placeholder="Email" required><br>
+        <input type="password" id="signupPassword" placeholder="Password" required><br>
+        <button type="submit">Sign Up</button>
+      </form>
+      <span class="link" onclick="showLogin()">Already have an account? <b>Login</b></span>
+    </div>
   </div>
 
   <script src="../javascript/login.js"></script>

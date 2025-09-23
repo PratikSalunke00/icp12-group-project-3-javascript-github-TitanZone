@@ -59,6 +59,7 @@ a {
 
     z-index: 100;
     /* position: fixed; */
+    line-height:normal;
 
 }
 
@@ -70,7 +71,7 @@ a {
     justify-content: space-around;
 }
 
-.sign-up-tag {
+.sign-up {
     background-color: white;
     color: black;
     padding: 4px 8px;

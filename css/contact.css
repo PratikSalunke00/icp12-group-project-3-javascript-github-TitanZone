@@ -8,9 +8,17 @@ body{
     background-color: #0a0e17;
     color:#e0e0e0;
     line-height: 1.6;
-    overflow-x: hidden;
+    overflow: hidden;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, 'sans-serif';
 }
+
+.all-contact-page{
+    height: 100vh;
+    overflow: scroll;
+    padding-bottom: 20px;
+    overflow-x: hidden;
+}
+
 h1,h2,h3,h4{
     color: #ffffff;
     margin-bottom: 1rem;
@@ -35,7 +43,7 @@ h3{
 .info-small-items{
     font-size: 20px;
 }
-P{
+#paragraph{
     margin-bottom: 1rem;
 }
 .hero{
