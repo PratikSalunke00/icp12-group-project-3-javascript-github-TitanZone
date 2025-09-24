@@ -77,7 +77,7 @@ const epicgamelinks = [
   "https://hardest-2d-game.netlify.app/",
   "https://fruit-ninja-game1.netlify.app/",
   "pages/wordgame.html"
-];
+]; 
 
 const loadepicgames = () => {
   const gamesList = document.getElementById("epicgames");

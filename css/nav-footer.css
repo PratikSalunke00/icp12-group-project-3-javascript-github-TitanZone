@@ -67,7 +67,6 @@ a {
 }
 
 .pages a {
-
     background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
     -webkit-background-clip: text;
     background-clip: text;
@@ -103,19 +102,18 @@ a {
     .hamburger {
         display: flex;
         font-size: 24px;
-  background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+        background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
 
     .hamburger i {
-  background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
+        background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
 
     .nav {
         padding: 0 40px;
@@ -213,9 +211,27 @@ a {
     color: transparent;
 }
 
-.quick-links,
-.legal,
+.quick-links {
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
 .connect {
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.legal {
     display: flex;
     flex-direction: column;
     line-height: 30px;
@@ -320,6 +336,14 @@ hr {
 
     .nav {
         padding: 0 15px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
     }
 
 }
