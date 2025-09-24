@@ -32,15 +32,15 @@ a {
     flex-direction: row;
     align-items: center;
     gap: 16px;
-    background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
 }
 
 .name {
     font-size: 1.8rem;
     font-weight: bolder;
+    background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .nav {

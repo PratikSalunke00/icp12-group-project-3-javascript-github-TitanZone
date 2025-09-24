@@ -37,7 +37,7 @@ const risegameimgs = [
 
 const risegamelinks = [
   "./pages/traffic-game.html",
-  "./pages/mathpuzzle.htmll",
+  "./pages/mathpuzzle.html",
   "https://chrome-trex-game1.netlify.app/",
   "./pages/roll-dice-game.html",
   "./pages/tic-tac-toe-game.html",

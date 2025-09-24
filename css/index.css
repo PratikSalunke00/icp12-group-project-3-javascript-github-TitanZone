@@ -60,6 +60,8 @@ i {
     outline: 1px solid white;
 }
 
+
+
 .container {
     width: 100%;
     overflow: scroll;
@@ -72,7 +74,23 @@ i {
     background-size: contain;
     width: 100%;
     height: 92vh;
-    opacity: 0.9;
+    opacity: 0.88;
+}
+
+.background-content{
+    display: flex;
+    flex-direction: column  ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+}
+
+.special-line{
+    margin-top:40px;
+      background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 h2 {
@@ -100,6 +118,9 @@ h2 {
     border-radius: 0.5rem;
     margin-top: 2rem;
 }
+.game-img:hover{
+    outline:1px solid white;
+}
 
 .games {
     display: flex;
@@ -108,6 +129,7 @@ h2 {
 }
 
 .game-img {
+    
     width: 100%;
     height: 100%;
     object-fit: cover;
