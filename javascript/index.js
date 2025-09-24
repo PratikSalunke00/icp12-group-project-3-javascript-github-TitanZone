@@ -66,6 +66,7 @@ const epicgameimgs = [
   "images/guess-the-number.jpg",
   "images/hard-2d.jpg",
   "images/fruit-ninja.jpg",
+  "images/word-game.jpg"
 ];
 
 const epicgamelinks = [
@@ -74,8 +75,8 @@ const epicgamelinks = [
   "./pages/stone-paper-scissor.html",
   "./pages/guess-the-number-game.html",
   "https://hardest-2d-game.netlify.app/",
-  "https://fruit-ninja-game1.netlify.app/"
-
+  "https://fruit-ninja-game1.netlify.app/",
+  "pages/wordgame.html"
 ];
 
 const loadepicgames = () => {
