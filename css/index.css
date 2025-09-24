@@ -226,4 +226,8 @@ h2 {
         opacity: 0.88;
         padding-top: 0px;
     }
+
+    .special-line {
+        margin-top: 20px;
+    }
 }
