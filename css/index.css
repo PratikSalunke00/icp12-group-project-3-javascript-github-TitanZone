@@ -60,7 +60,7 @@ body {
       color: transparent;
       text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
 
-}
+} 
 
 .game-sidebar:hover {
     outline: 1px solid white;
@@ -103,6 +103,9 @@ h2{
     /* scroll-margin-top: 100px; */
 }
 
+.epic-games-container{
+        padding: 20px;
+}
 .game {
     width: 340px;
     height: 240px;
