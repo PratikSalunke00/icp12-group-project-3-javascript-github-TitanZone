@@ -9,11 +9,8 @@ body {
     font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
-    /* overflow: hidden; */
     color: white;
-    /* position: fixed; */
     width: 100%;
-
 }
 
 a {
@@ -23,8 +20,6 @@ a {
 
 #a {
     text-decoration: none;
-    /* color: #fff; */
-    /* font-size: larger; */
     font-size: 2.8vh;
 }
 
@@ -37,13 +32,10 @@ a {
     flex-direction: row;
     align-items: center;
     gap: 16px;
-
-    /* font-size: 1.5rem; */
     background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
 }
 
 .name {
@@ -57,14 +49,12 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 68px;
+    height: 65px;
     width: 100%;
-    /* width: 100vh; */
     padding: 0 60px;
     position: sticky;
     top: 0;
     z-index: 100;
-    /* position: fixed; */
     line-height: normal;
 }
 
@@ -74,8 +64,6 @@ a {
     align-items: center;
     gap: 40px;
     justify-content: space-around;
-
-
 }
 
 .pages a {
@@ -84,7 +72,6 @@ a {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
 }
 
 .sign-up {
@@ -93,8 +80,6 @@ a {
     padding: 4px 8px;
     border: none;
     border-radius: 20px;
-
-
 }
 
 .hamburger {
@@ -127,16 +112,11 @@ a {
 
 }
 
-
-
 @media (max-width: 340px) {
     .nav {
         padding: 0 20px;
     }
 }
-
-
-
 
 .footer {
     background-color: #37353E;
@@ -152,14 +132,12 @@ a {
     flex-direction: row;
     align-items: center;
     gap: 10px;
-
     background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
-}
 
+}
 
 .namef {
     font-size: 1.4rem;
@@ -169,9 +147,7 @@ a {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
 }
-
 
 .address-contact {
     margin-top: 15px;
@@ -183,8 +159,6 @@ a {
 
 .address-contact p {
     margin-top: 8px;
-
-
     background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
     -webkit-background-clip: text;
     background-clip: text;
@@ -200,12 +174,10 @@ a {
     text-align: center;
     margin-top: 10px;
 
-
     background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
 }
 
 .telephone a {
@@ -213,13 +185,10 @@ a {
     flex-direction: row;
     align-items: center;
     gap: 10px;
-
-
     background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
 }
 
 .mail a {
@@ -227,14 +196,10 @@ a {
     flex-direction: row;
     align-items: center;
     gap: 10px;
-
-
     background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
-
 }
 
 .quick-links,
@@ -243,24 +208,17 @@ a {
     display: flex;
     flex-direction: column;
     line-height: 30px;
-
-
     background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
 }
 
-
 .quick-links a {
-
     background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
-
 }
 
 .legal a {
@@ -268,49 +226,39 @@ a {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
-
 }
 
 .footer-content-names {
     margin-bottom: 20px;
     margin-top: 40px;
-
     background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
 }
 
 .footer-content-names-download {
     margin-top: 15px;
     margin-bottom: 20px;
-
     background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
 }
 
 .icon {
     height: 30px;
 }
 
-
-
 .copy-right {
     width: 100%;
     text-align: center;
     padding-bottom: 40px;
     margin-bottom: 40px 0;
-
     background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
 }
 
 hr {
@@ -322,7 +270,6 @@ hr {
     display: flex;
     justify-content: space-around;
     gap: 10px;
-
 }
 
 .title-footer,
@@ -333,16 +280,11 @@ hr {
     max-width: 300px;
     word-wrap: break-word;
     margin-top: 40px;
-
-
     background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
 }
-
-
 
 @media (max-width: 768px) {
 

@@ -12,17 +12,12 @@ body {
     overflow: hidden;
     color: white;
     background-color: #0a0e17;
-
-    
 }
-
 
 .main-content {
     display: flex;
     flex-direction: row;
-    /* overflow: hidden; */
     height: 100vh;
-    /* max-height: fit-content; */
     position: fixed;
 }
 
@@ -33,7 +28,6 @@ body {
     height: 100vh;
     min-height: 100vh;
     position: sticky;
-    /* margin-top: 100px;   */
 }
 
 .game-sidebar {
@@ -52,29 +46,25 @@ body {
 
 }
 
-.game-sidebar p , i{
-              font-size: 1.3rem; 
-      background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
+.game-sidebar p,
+i {
+    font-size: 1.3rem;
+    background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 
-} 
+}
 
 .game-sidebar:hover {
     outline: 1px solid white;
 }
 
-
 .container {
     width: 100%;
-    /* height: 100vh; */
     overflow: scroll;
-    /* background-color: black; */
     overflow-x: hidden;
     min-height: 100vh;
-    /* opacity: 0.6; */
 }
 
 .background {
@@ -85,13 +75,11 @@ body {
     opacity: 0.9;
 }
 
-h2{
-          /* font-size: 2.5rem; */
-      background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      text-shadow: 0 0 10px rgba(78, 205, 196, 0.3);
+h2 {
+    background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .top-games-container {
@@ -100,25 +88,23 @@ h2{
 
 .rise-games-container {
     padding: 20px;
-    /* scroll-margin-top: 100px; */
 }
 
-.epic-games-container{
-        padding: 20px;
+.epic-games-container {
+    padding: 20px;
 }
+
 .game {
     width: 340px;
     height: 240px;
     border-radius: 0.5rem;
-    /* padding: 0.8rem; */
     margin-top: 2rem;
 }
 
 .games {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-evenly ;
-
+    justify-content: space-evenly;
 }
 
 .game-img {
@@ -131,6 +117,4 @@ h2{
 .top-games-container {
     padding: 20px;
     scroll-margin-top: 100px;
-
 }
-

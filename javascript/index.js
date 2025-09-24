@@ -109,6 +109,13 @@ document.getElementById("rise-btn").addEventListener("click", function () {
   );
 });
 
+document.getElementById("epic-btn").addEventListener("click", function () {
+  document.getElementById("epic-games-container").scrollIntoView(
+    {
+      behavior: "smooth"
+    }
+  );
+});
 
 
 

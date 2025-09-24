@@ -14,7 +14,9 @@ const now = new Date();
         message = "Good Night Gamer 🌃";
     }
 
-    document.getElementById("greeting").innerText = message;
+    // document.getElementById("greeting").innerText = message;
+    document.getElementById("greeting").innerHTML = `<p>${message}</p>`;
+
 
     // Team Slider
     const images = [
