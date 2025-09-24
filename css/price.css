@@ -14,7 +14,7 @@
       overflow: hidden;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, 'sans-serif';
   }
-
+ 
   .price-content {
       display: flex;
       flex-direction: column;
