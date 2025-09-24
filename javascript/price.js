@@ -41,3 +41,4 @@ const features = {
       alert("Redirecting to payment gateway...");
       // Here you can integrate Stripe, PayPal, Razorpay, etc.
     }
+    
