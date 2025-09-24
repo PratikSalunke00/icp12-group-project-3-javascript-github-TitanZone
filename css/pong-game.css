@@ -1,0 +1,89 @@
+body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #333;
+        font-family: Arial, sans-serif;
+        color: white;
+    }
+
+    .heading{
+        align-items: center;
+    }
+
+    #game-board {
+        width: 600px;
+        height: 400px;
+        background-color: #000;
+        position: relative;
+        overflow: hidden;
+        border: 2px solid white;
+        margin-bottom: 20px;
+    }
+
+    .paddle {
+        width: 15px;
+        height: 80px;
+        background-color: white;
+        position: absolute;
+    }
+
+    #player-paddle {
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #computer-paddle {
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #ball {
+        width: 15px;
+        height: 15px;
+        background-color: white;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #score {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 20px;
+    }
+
+    #controls {
+        display: flex;
+        gap: 20px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #555;
+        border: none;
+        color: white;
+        border-radius: 5px;
+    }
+
+    button:hover {
+        background-color: #777;
+    }
+
+    @media screen and (max-width:650px){
+        #game-board{
+            width: 100%;
+            height: 280px;
+        }
+    }
