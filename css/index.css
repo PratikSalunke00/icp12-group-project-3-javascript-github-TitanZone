@@ -73,24 +73,87 @@ i {
     opacity: 0.88;
 }
 
-/* .background-content {
+.background-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 100px;
     text-align: center;
-} */
+}
 
-/* .special-line {
+.special-line {
     margin-top: 40px;
     background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
     text-align: center;
+    /* width: 100%; */
+}
+
+.sign p{
+    font-size:x-large;
+    margin-top: 40px;
+    background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+button {
+    background: #641faa;
+    border: 3px solid #c084fc;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+    font-weight: bold;
+    width: 30%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
     width: 100%;
-} */
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+}
+
+button:hover::before {
+    left: 100%;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
 
 h2 {
     background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
@@ -141,7 +204,6 @@ h2 {
     scroll-margin-top: 100px;
 }
 
-
 @media (max-width: 390px) {
     .card {
         width: 90%;
@@ -150,14 +212,8 @@ h2 {
     .container {
         width: 100%;
     }
-}
-/* 
-@media (max-width: 500px) {
-    .card {
-        width: 60%;
-    }
 
-    .container {
-        width: 80%;
+    .background-content{
+        padding: 40px;
     }
-} */
+}
