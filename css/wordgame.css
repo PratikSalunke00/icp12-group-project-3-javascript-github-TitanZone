@@ -1,0 +1,116 @@
+:root {
+      --bg: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+      --primary: #ff6f61;
+      --secondary: #ffcc00;
+      --btn-bg: #fff;
+      --btn-hover: #f1f1f1;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: var(--bg);
+      font-family: system-ui, sans-serif;
+      color: #333;
+    }
+
+    .game {
+      width: 100%;
+      max-width: 420px;
+      background: #fff;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+      text-align: center;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 16px;
+      color: var(--primary);
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+    .scramble {
+      font-size: 32px;
+      font-weight: bold;
+      letter-spacing: 5px;
+      color: var(--secondary);
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+      margin-bottom: 14px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    button {
+      flex: 1;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.2s;
+      background: var(--btn-bg);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    button:hover {
+      background: var(--btn-hover);
+    }
+
+    .message {
+      font-size: 16px;
+      margin-top: 10px;
+      font-weight: 600;
+    }
+
+    .score {
+      margin-top: 8px;
+      font-size: 14px;
+      color: #555;
+    }
+
+
+    .popup {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: var(--secondary);
+      color: #333;
+      padding: 12px 20px;
+      border-radius: 12px;
+      font-size: 20px;
+      font-weight: bold;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.5s, transform 0.5s;
+    }
+
+    .popup.show {
+      opacity: 1;
+      transform: translate(-50%, -60%);
+    }
