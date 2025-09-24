@@ -145,13 +145,11 @@ a {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-
 }
 
 .namef {
     font-size: 1.4rem;
     font-weight: bolder;
-
     background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
     -webkit-background-clip: text;
     background-clip: text;
@@ -163,7 +161,6 @@ a {
     display: flex;
     flex-direction: row;
     gap: 10px;
-
 }
 
 .address-contact p {
@@ -182,7 +179,6 @@ a {
     gap: 10px;
     text-align: center;
     margin-top: 10px;
-
     background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
     -webkit-background-clip: text;
     background-clip: text;
@@ -354,4 +350,25 @@ hr {
         /* padding: 10px; */
     }
 
+    .quick-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .connect {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .legal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
