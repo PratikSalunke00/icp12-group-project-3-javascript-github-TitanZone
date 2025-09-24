@@ -2,9 +2,12 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="../icons/logo-icon.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="./icons/logo-icon.png" />
 
   <title>Document</title>
   <link rel="stylesheet" href="../css/price.css" />
@@ -18,10 +21,10 @@
       <img src="../icons/logo-icon.png" height="45" />
       <p class="name">Titan Zone</p>
     </div>
- 
+
     <div class="pages" id="pages">
       <a href="/index.html" id="a">Home</a>
-      <a href="/pages/about.html" id="a">About</a>
+      <a href="/pages/about-us.html" id="a">About</a>
       <a href="/pages/price.html" id="a">Pricing</a>
       <a href="/pages/faq.html" id="a">Faq</a>
       <a href="/pages/contact.html" id="a">Contact Us</a>
@@ -80,34 +83,32 @@
       </div>
 
       <!-- Modal -->
- <!-- Checkout Modal -->
-<div id="checkoutModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('checkoutModal')">&times;</span>
+      <!-- Checkout Modal -->
+      <div id="checkoutModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('checkoutModal')">&times;</span>
 
-    <h2 id="planName"></h2>
-    <div id="planFeatures"></div>
+          <h2 id="planName"></h2>
+          <div id="planFeatures"></div>
 
-    <!-- Proceed Button -->
-    <button id="checkoutBtn" onclick="proceedPayment()">Proceed to Pay</button>
-  </div>
-</div>
+          <!-- Proceed Button -->
+          <button id="checkoutBtn" onclick="proceedPayment()">Proceed to Pay</button>
+        </div>
+      </div>
 
-<!-- Payment Modal -->
-<div id="paymentModal" class="modal">
-  <div class="modal-content">
-    <span class="close" onclick="closeModal('paymentModal')">&times;</span>
+      <!-- Payment Modal -->
+      <div id="paymentModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('paymentModal')">&times;</span>
 
-    <h3>Payment Options</h3>
-    <p>Choose your payment method:</p>
-    <button onclick="payNow('Credit Card')" class="payment-btn">💳 Pay with Card</button>
-    <button onclick="payNow('UPI')"class="payment-btn" >📱 Pay with UPI</button>
-    <button onclick="payNow('PayPal')" class="payment-btn">🌍 Pay with PayPal</button>
-  </div>
-</div>
-
-
-
+          <h3>Payment Options</h3>
+          <p>Choose your payment method:</p>
+          <button onclick="payNow('Credit Card')" class="payment-btn">💳 Pay with Card</button>
+          <button onclick="payNow('UPI')" class="payment-btn">📱 Pay with UPI</button>
+          <button onclick="payNow('PayPal')" class="payment-btn">🌍 Pay with PayPal</button>
+        </div>
+      </div>
+    </div>
 
 
     <footer class="footer">

@@ -52,3 +52,28 @@ function login() {
     alert("❌ Invalid Email or Password!");
   }
 }
+
+
+
+document.getElementById('site-year').textContent = new Date().getFullYear();
+
+const pages = document.getElementById("pages");
+let isOpen = false;
+
+function showPages() {
+  pages.style.display = "flex";
+  isOpen = true;
+}
+
+function hidepages() {
+  pages.style.display = "none";
+  isOpen = false;
+}
+
+function toggleHamburger() {
+  if (isOpen) {
+    hidepages();
+  } else {
+    showPages();
+  }
+}

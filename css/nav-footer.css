@@ -103,8 +103,19 @@ a {
     .hamburger {
         display: flex;
         font-size: 24px;
-        color: white;
+  background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
     }
+
+    .hamburger i {
+  background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 
     .nav {
         padding: 0 40px;
