@@ -27,18 +27,34 @@ const features = {
       ]
     };
 
-    function openModal(plan) {
-      document.getElementById("checkoutModal").style.display = "flex";
-      document.getElementById("planName").innerText = plan + " Plan Features";
-      document.getElementById("planFeatures").innerHTML = features[plan].map(f => "• " + f).join("<br>");
-    }
-
-    function closeModal() {
-      document.getElementById("checkoutModal").style.display = "none";
-    }
-
-    function proceedPayment() {
-      alert("Redirecting to payment gateway...");
-      // Here you can integrate Stripe, PayPal, Razorpay, etc.
-    }
+   
     
+
+
+function openModal(plan) {
+  // Show checkout modal
+  document.getElementById("checkoutModal").style.display = "flex";
+
+  // Fill plan details
+  document.getElementById("planName").innerText = `${plan} Plan`;
+  document.getElementById("planFeatures").innerHTML =
+    `<ul>${features[plan].map(f => `<li>${f}</li>`).join("")}</ul>`;
+}
+
+function proceedPayment() {
+  // Close checkout modal
+  closeModal("checkoutModal");
+
+  // Open payment modal
+  document.getElementById("paymentModal").style.display = "flex";
+}
+
+function closeModal(modalId) {
+  document.getElementById(modalId).style.display = "none";
+}
+
+function payNow(method) {
+  alert("You selected: " + method + ". Redirecting to payment gateway...");
+}
+
+

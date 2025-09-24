@@ -80,15 +80,34 @@
       </div>
 
       <!-- Modal -->
-      <div id="checkoutModal" class="modal">
-        <div class="modal-content">
-          <span class="close" onclick="closeModal()">&times;</span>
-          <h2 id="planName"></h2>
-          <p id="planFeatures"></p>
-          <button onclick="proceedPayment()">Proceed to Pay</button>
-        </div>
-      </div>
-    </div>
+ <!-- Checkout Modal -->
+<div id="checkoutModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('checkoutModal')">&times;</span>
+
+    <h2 id="planName"></h2>
+    <div id="planFeatures"></div>
+
+    <!-- Proceed Button -->
+    <button id="checkoutBtn" onclick="proceedPayment()">Proceed to Pay</button>
+  </div>
+</div>
+
+<!-- Payment Modal -->
+<div id="paymentModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('paymentModal')">&times;</span>
+
+    <h3>Payment Options</h3>
+    <p>Choose your payment method:</p>
+    <button onclick="payNow('Credit Card')" class="payment-btn">💳 Pay with Card</button>
+    <button onclick="payNow('UPI')"class="payment-btn" >📱 Pay with UPI</button>
+    <button onclick="payNow('PayPal')" class="payment-btn">🌍 Pay with PayPal</button>
+  </div>
+</div>
+
+
+
 
 
     <footer class="footer">
