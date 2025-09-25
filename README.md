@@ -44,10 +44,13 @@ Here are some of the games you’ll find on Titan Games:
 ## Screenshots
 
 ### Home Page
-![Home Page](img/ashish.jpg)
+![Home Page](images/home-page.png)
 
 ### Sample Game
-![Sample Game](img/games/hardest-game.png)
+![Sample Game](images/game1-ss.png)
+![Sample Game](images/game2-ss.png)
+![Sample Game](images/game3-ss.png)
+![Sample Game](images/game4-ss.png)
 
 
 ## Project Structure
@@ -67,8 +70,8 @@ Here are some of the games you’ll find on Titan Games:
 ---
 
 ## Contributors
-<a href="https://github.com/your-username/titan-games/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=your-username/titan-games" />
+<a href="https://github.com/PratikSalunke00/icp12-group-project-3-javascript-github-TitanZone/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=PratikSalunke00/icp12-group-project-3-javascript-github-TitanZone" />
 </a>
 
 ---
