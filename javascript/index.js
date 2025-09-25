@@ -1,5 +1,5 @@
 const topgameimgs = [
-  "images/Simon-Game-img.jpg",
+  "images/simon-game-img.jpg",
   "images/snake-game-img.jpg",
 
   "images/game-2048-img.avif",
