@@ -79,7 +79,6 @@ i {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* margin-top: 100px; */
     text-align: center;
 }
 
@@ -90,7 +89,6 @@ i {
     background-clip: text;
     color: transparent;
     text-align: center;
-    /* width: 100%; */
 }
 
 .sign p {
@@ -206,14 +204,6 @@ h2 {
 }
 
 @media (max-width: 390px) {
-    /* .card {
-        width: 90%;
-    }
-    
-    .container {
-        width: 100%;
-    } */
-
     .background-content {
         padding: 10px;
     }

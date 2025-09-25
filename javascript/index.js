@@ -24,8 +24,6 @@ const loadtopgames = () => {
 
 loadtopgames();
 
-
-
 const risegameimgs = [
   "images/traffic-game-img.jpg",
   "images/math-game.jpg",
@@ -56,8 +54,6 @@ const loadrisegames = () => {
 };
 
 loadrisegames();
-
-
 
 const epicgameimgs = [
   "images/emoji-catch.png",
@@ -92,8 +88,6 @@ const loadepicgames = () => {
 
 loadepicgames();
 
-
-
 document.getElementById("top-btn").addEventListener("click", function () {
   document.getElementById("top-games-container").scrollIntoView(
     {
@@ -118,11 +112,7 @@ document.getElementById("epic-btn").addEventListener("click", function () {
   );
 });
 
-
-
 document.getElementById('site-year').textContent = new Date().getFullYear();
-
-
 
 const pages = document.getElementById("pages");
 let isOpen = false;
